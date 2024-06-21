@@ -20,14 +20,13 @@ version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
-
 {% if cookiecutter.add_script == 'y' %}
 [tool.poetry.scripts]
 {{ cookiecutter.project_slug }} = "{{ cookiecutter.project_slug }}.main:main"
 {% endif %}
-
 [tool.poetry.group.lint.dependencies]
 ruff = ">=0.4.10,<1.0.0"
+typos = ">=1.22.8,<2.0.0"
 
 [tool.ruff.format]
 docstring-code-format = true

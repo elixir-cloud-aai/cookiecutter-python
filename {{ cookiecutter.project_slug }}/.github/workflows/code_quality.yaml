@@ -45,4 +45,22 @@ jobs:
 
       - name: Check code style
         run: poetry run ruff format --check
+
+  spell-check:
+    name: Spell Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      {% raw %}- name: Set up environment
+        uses: ./.github/actions/setup/poetry
+        with:
+          os: ${{ job.os }}
+          python-version: '3.11'
+          poetry-install-options: "--only=lint --no-root"
+          poetry-export-options: "--only=lint" {% endraw %}
+
+      - name: Check spellings
+        run: poetry run typos .
 ...
