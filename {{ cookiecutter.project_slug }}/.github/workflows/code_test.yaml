@@ -1,4 +1,4 @@
-{% raw %}---
+---
 name: Code Test
 
 on:
@@ -20,9 +20,9 @@ jobs:
       - name: Set up environment
         uses: ./.github/actions/setup/poetry
         with:
-          os: ${{ job.os }}{% endraw %}
+          {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          {% raw %}poetry-install-options: "--with=test"
+          poetry-install-options: "--with=test"
           poetry-export-options: "--with=test"
 
       - name: Run tests and generate coverage as test_unit.xml
@@ -35,7 +35,7 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          {% raw %}token: ${{ secrets.CODECOV_TOKEN }}{% endraw %}
           flags: test_unit
           files: ./test_unit.xml
           fail_ci_if_error: true
@@ -51,9 +51,9 @@ jobs:
       - name: Set up environment
         uses: ./.github/actions/setup/poetry
         with:
-          os: ${{ job.os }}{% endraw %}
+          {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          {% raw %}poetry-install-options: "--with=test"
+          poetry-install-options: "--with=test"
           poetry-export-options: "--with=test"
 
       - name: Run tests and generate coverage as test_integration.xml
@@ -66,9 +66,9 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          {% raw %}token: ${{ secrets.CODECOV_TOKEN }}{% endraw %}
           flags: test_integration
           files: ./test_integration.xml
           fail_ci_if_error: true
           verbose: true
-...{% endraw %}
+...

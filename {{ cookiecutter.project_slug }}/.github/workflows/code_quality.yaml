@@ -17,13 +17,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      {% raw %}- name: Set up environment
+      - name: Set up environment
         uses: ./.github/actions/setup/poetry
         with:
-          os: ${{ job.os }}
-          python-version: '3.11'
+          {% raw %}os: ${{ job.os }}{% endraw %}
+          python-version: '{{ cookiecutter.python_version }}'
           poetry-install-options: "--only=lint --no-root"
-          poetry-export-options: "--only=lint"{% endraw %}
+          poetry-export-options: "--only=lint"
 
       - name: Check code quality
         run: poetry run ruff check .
@@ -35,13 +35,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      {% raw %}- name: Set up environment
+      - name: Set up environment
         uses: ./.github/actions/setup/poetry
         with:
-          os: ${{ job.os }}
-          python-version: '3.11'
+          {% raw %}os: ${{ job.os }}{% endraw %}
+          python-version: '{{ cookiecutter.python_version }}'
           poetry-install-options: "--only=lint --no-root"
-          poetry-export-options: "--only=lint"{% endraw %}
+          poetry-export-options: "--only=lint"
 
       - name: Check code style
         run: poetry run ruff format --check
@@ -53,13 +53,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      {% raw %}- name: Set up environment
+      - name: Set up environment
         uses: ./.github/actions/setup/poetry
         with:
-          os: ${{ job.os }}
-          python-version: '3.11'
+          {% raw %}os: ${{ job.os }}{% endraw %}
+          python-version: '{{ cookiecutter.python_version }}'
           poetry-install-options: "--only=lint --no-root"
-          poetry-export-options: "--only=lint" {% endraw %}
+          poetry-export-options: "--only=lint"
 
       - name: Check spellings
         run: poetry run typos .
