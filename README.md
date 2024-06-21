@@ -1,6 +1,7 @@
 # ECC Python Cookiecutter Template
 
-This is a Cookiecutter template for creating a Python project with Poetry, including configurations for various project settings.
+This is a Cookiecutter template for creating a Python project with Poetry,
+including configurations for various project settings.
 
 ## Usage
 
