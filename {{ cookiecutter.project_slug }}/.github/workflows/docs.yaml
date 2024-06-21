@@ -1,0 +1,49 @@
+---
+name: Documentation Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-api-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Specify your Python version
+
+      - name: Set up environment
+        uses: ./.github/actions/setup/poetry
+        with:
+          {% raw %}os: ${{ job.os }}{% endraw %}
+          python-version: '{{ cookiecutter.python_version }}'
+          poetry-install-options: "--with=docs"
+          poetry-export-options: "--with=docs"
+
+      - name: Generate API docs
+        run: |
+          sphinx-apidoc -o /tmp/docs {{ cookiecutter.project_slug }}/
+
+      - name: Compare docs with main branch
+        id: check_docs_diff
+        run: |
+          shasum /tmp/docs/* > /tmp/docs.sha
+          shasum /docs/pages/* > /docs/project_doc.sha
+          diff=$(diff /tmp/docs.sha /docs/project_doc.sha) || true
+          if [[ -n "$diff" ]]; then
+            echo "::error::API documentation is out of date."
+            exit 1
+          else
+            echo "API documentation is up to date."
+          fi
+...

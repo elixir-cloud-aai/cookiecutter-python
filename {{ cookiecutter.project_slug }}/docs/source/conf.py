@@ -24,7 +24,7 @@ def _get_project_meta():
 pkg_meta = _get_project_meta()
 current_year = datetime.datetime.now().year
 project = str(pkg_meta["name"])
-project_copyright = f"{current_year}, {str(pkg_meta["authors"][0])}"
+project_copyright = f"{current_year}, {str(pkg_meta['authors'][0])}"
 author = str(pkg_meta["authors"][0])
 
 version = str(pkg_meta["version"])
@@ -75,7 +75,7 @@ language = "en"
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = ["_build", "Thumbs.db", "".DS_Store"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
