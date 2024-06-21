@@ -32,6 +32,9 @@ typos = ">=1.22.8,<2.0.0"
 pytest = ">=8.2.2,<9.0.0"
 pytest-cov = ">=5.0.0,<=6.0.0"
 
+[tool.poetry.group.types.dependencies]
+mypy = ">=1.10.0,<2.0.0"
+
 [tool.ruff.format]
 docstring-code-format = true
 indent-style = "space"
