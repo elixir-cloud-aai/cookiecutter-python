@@ -10,6 +10,9 @@ scanning-settings:
 
 security:
   ignore-vulnerabilities:
+    70612:
+      reason: "Won't use untrusted templates without sandboxing."
+      expires: '2025-5-27'
 
 report:
   dependency-vulnerabilities:
