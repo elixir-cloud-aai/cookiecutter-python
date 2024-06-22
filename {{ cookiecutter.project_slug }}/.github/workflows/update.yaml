@@ -3,7 +3,7 @@ name: Update project structure
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # at the end of every day
+    - cron: "0 2 * * 1" # Every Monday at 2am
 
 jobs:
   update-template:
@@ -17,8 +17,8 @@ jobs:
         with:
           {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          poetry-install-options: "--only=misc --no-root"
-          poetry-export-options: "--only=misc"
+          poetry-install-options: "--with=misc --no-root"
+          poetry-export-options: "--with=misc"
 
       - name: Update project structure
         run: |
@@ -28,11 +28,12 @@ jobs:
         id: changes
         uses: UnicornGlobal/has-changes-action@v1.0.11
 
-      - name: apply additional changes and fixes
+      - name: Apply additional changes and fixes
         if: steps.changes.outputs.changed == 1
         run: |
           poetry lock --no-update
           poetry install
+          pre-commit run --all-files
 
       - name: Get new template version
         if: steps.changes.outputs.changed == 1
@@ -47,7 +48,7 @@ jobs:
           {% raw %}token: ${{ secrets.AUTO_UPDATE_GITHUB_TOKEN }}{% endraw %}
           {% raw %}commit-message: >-
             chore: update project structure to ${{ env.TEMPLATE_COMMIT }}{% endraw %}
-          title: "chore: Auto-Sync cookiecutter template"
+          title: "chore: auto-sync cookiecutter template"
           body: ""
           branch: chore/cookiecutter-pypackage
           delete-branch: true
