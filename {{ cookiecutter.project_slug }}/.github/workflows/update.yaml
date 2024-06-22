@@ -37,7 +37,8 @@ jobs:
       - name: Get new template version
         if: steps.changes.outputs.changed == 1
         run: |
-          echo "TEMPLATE_COMMIT=$(cat .cruft.json | jello -r "_['commit'][:8]")" >> $GITHUB_ENV
+          COMMIT_HASH=$(cat .cruft.json | jello -r "_['commit'][:8]")
+          echo "TEMPLATE_COMMIT=${COMMIT_HASH}" >> $GITHUB_ENV
 
       - name: Create Pull Request
         if: steps.changes.outputs.changed == 1
