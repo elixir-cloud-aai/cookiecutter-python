@@ -1,0 +1,10 @@
+---
+# https://yamllint.readthedocs.io/en/stable/configuration.html#default-configuration
+extends: default
+
+rules:
+  document-start:
+    level: error
+  document-end:
+    level: error
+...
