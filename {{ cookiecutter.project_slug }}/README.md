@@ -12,6 +12,57 @@
 
 {{ cookiecutter.short_description }}
 
+## Development
+
+For ease, certain scripts have been abbreviated in `Makefile`, make sure that
+have installed the dependencies before running the commands.
+
+To view the commdands available, run:
+
+```sh
+make
+```
+
+Here are certain commands that you might find useful:
+
+- Making a virtual environment
+
+```sh
+make v
+```
+
+- Installing dependencies
+
+```sh
+make i
+```
+
+- Running tests
+
+```sh
+make t
+```
+
+- Running linter, formatter and spell checker
+
+```sh
+make fl
+```
+
+- Building the documentation
+
+```sh
+make d
+```
+
+- Running type checker
+
+```sh
+make tc
+```
+
+> **Note**: This is not the complete list of commands, run `make` to find if more have been added.
+
 ## Contributing
 
 This project is a community effort and lives off _your_ contributions, be it in

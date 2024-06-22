@@ -12,6 +12,8 @@ help:
 	@echo "		\033[36mGenerate project documentation.\033[0m"
 	@echo "	\033[1m\033[35mformat-lint\033[0m \033[37m(fl)\033[0m"
 	@echo "		\033[36mRun linter, formatter, and spellcheck.\033[0m"
+	@echo "	\033[1m\033[35minstall\033[0m \033[37m(i)\033[0m"
+	@echo "		\033[36mInstall all the dependencies and {{ cookiecutter.project_slug }}.\033[0m"
 	@echo "	\033[1m\033[35msecurity\033[0m \033[37m(s)\033[0m"
 	@echo "		\033[36mRun security scan using bandit and safety.\033[0m"
 	@echo "	\033[1m\033[35mtest\033[0m \033[37m(t)\033[0m"
@@ -43,6 +45,14 @@ format-lint:
 
 .PHONY: fl
 fl: format-lint
+
+.PHONY: install
+install:
+	@echo "installing deps and {{ cookiecutter.project_slug}} using poetry..."
+	@poetry install
+
+.PHONY: i
+i: install
 
 .PHONY: security
 security:
