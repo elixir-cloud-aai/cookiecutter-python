@@ -6,6 +6,8 @@ default: help
 help:
 	@echo "Usage: make [target]"
 	@echo "Available targets:"
+	@echo "	\033[1m\033[35mclean-venv\033[0m \033[37m(cv)\033[0m"
+	@echo "		\033[36mRemove virtual env.\033[0m"
 	@echo "	\033[1m\033[35mdocs\033[0m \033[37m(d)\033[0m"
 	@echo "		\033[36mGenerate project documentation.\033[0m"
 	@echo "	\033[1m\033[35mformat-lint\033[0m \033[37m(fl)\033[0m"
@@ -16,6 +18,8 @@ help:
 	@echo "		\033[36mRun all the tests.\033[0m"
 	@echo "	\033[1m\033[35mtype-check\033[0m \033[37m(tc)\033[0m"
 	@echo "		\033[36mPerform type checking with mypy.\033[0m"
+	@echo "	\033[1m\033[35mvenv\033[0m \033[37m(v)\033[0m"
+	@echo "		\033[36mCreate a virtual environment.\033[0m"
 
 .PHONY: docs
 docs:
@@ -64,3 +68,11 @@ type-check:
 
 .PHONY: tc
 tc: type-check
+
+.PHONY: clean-venv
+clean-venv:
+	@echo "Removing venv..."
+	@rm -rf .venv
+
+.PHONY: cv
+cv: clean-venv
