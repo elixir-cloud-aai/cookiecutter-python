@@ -69,6 +69,17 @@ type-check:
 .PHONY: tc
 tc: type-check
 
+.PHONY: venv
+venv:
+	@echo "Creating virtual environment..."
+	@python -m venv .venv
+	@echo "\n++++++++++++++++++++++++++Summary+++++++++++++++++++++++++++++++++++\n"
+	@echo "Please activate the env for this shell by:"
+	@echo "source .venv/bin/activate"
+
+.PHONY: v
+v: venv
+
 .PHONY: clean-venv
 clean-venv:
 	@echo "Removing venv..."
