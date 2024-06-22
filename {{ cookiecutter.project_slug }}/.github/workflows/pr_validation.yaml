@@ -45,7 +45,7 @@ jobs:
       - uses: amannn/action-semantic-pull-request@v5
         env:
           {% raw %}GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}{% endraw %}
-        with:0
+        with:
           types: |
             fix
             feat
