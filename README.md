@@ -5,16 +5,16 @@ including configurations for various project settings.
 
 ## Usage
 
-1. **Install Cookiecutter** (if you haven't already):
+1. **Install cruft** (if you haven't already):
 
 ```sh
-pip install cookiecutter
+pip install cruft
 ```
 
 2. **Generate a New Project**:
 
 ```sh
-cookiecutter gh:elixir-cloud-aai/cookiecutter-python
+cruft create https://github.com/elixir-cloud-aai/cookiecutter-python.git
 ```
 
 ## Configurations
