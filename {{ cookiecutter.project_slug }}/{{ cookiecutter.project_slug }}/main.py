@@ -1,7 +1,9 @@
-"""Entry point for {{ cookiecutter.project_slug }}."""
+"""Entry point for python_cookiecutter."""
+
 
 def main():
-  print("Hello from {{ cookiecutter.project_slug }}!")
+  print("Hello from python_cookiecutter!")
+
 
 if __name__ == "__main__":
-	main()
+  main()

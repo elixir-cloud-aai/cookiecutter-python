@@ -15,11 +15,13 @@ import tomli
 
 sys.path.insert(0, os.path.abspath("../.."))
 
+
 # -- Project information -----------------------------------------------------
 def _get_project_meta():
-	_pyproject_path = Path(__file__).parents[2] / "pyproject.toml"
-	with open(_pyproject_path, mode="rb") as pyproject:
-		return tomli.load(pyproject)["tool"]["poetry"]
+  _pyproject_path = Path(__file__).parents[2] / "pyproject.toml"
+  with open(_pyproject_path, mode="rb") as pyproject:
+    return tomli.load(pyproject)["tool"]["poetry"]
+
 
 pkg_meta = _get_project_meta()
 current_year = datetime.datetime.now().year
@@ -34,20 +36,20 @@ release = version
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-	"sphinx.ext.autodoc",
-	"sphinx.ext.doctest",
-	"sphinx.ext.todo",
-	"sphinx.ext.coverage",
-	"sphinx.ext.viewcode",
-	"sphinx.ext.autosummary",
-	# Used to write beautiful docstrings:
-	"sphinx.ext.napoleon",
-	# Used to include .md files:
-	"m2r2",
-	# Used to insert typehints into the final docs:
-	"sphinx_autodoc_typehints",
-	# Used to embed values from the source code into the docs:
-	"added_value",
+  "sphinx.ext.autodoc",
+  "sphinx.ext.doctest",
+  "sphinx.ext.todo",
+  "sphinx.ext.coverage",
+  "sphinx.ext.viewcode",
+  "sphinx.ext.autosummary",
+  # Used to write beautiful docstrings:
+  "sphinx.ext.napoleon",
+  # Used to include .md files:
+  "m2r2",
+  # Used to insert typehints into the final docs:
+  "sphinx_autodoc_typehints",
+  # Used to embed values from the source code into the docs:
+  "added_value",
 ]
 # Set `typing.TYPE_CHECKING` to `True`:
 # https://pypi.org/project/sphinx-autodoc-typehints/
