@@ -53,6 +53,9 @@ mypy = ">=1.10.0,<2.0.0"
 [tool.poetry.scripts]
 {{ cookiecutter.project_slug }} = "{{ cookiecutter.project_slug }}.main:main"
 {% endif %}
+[tool.ruff]
+indent-width = 2
+
 [tool.ruff.format]
 docstring-code-format = true
 indent-style = "space"
