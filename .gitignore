@@ -186,3 +186,6 @@ SquareX Safe File Viewer
 # Keep pre-commit hooks and .yamllint file
 !.pre-commit-config.yaml
 !.yamllint.yaml
+
+# Ignore default generated template
+python_cookiecutter/*
