@@ -109,7 +109,7 @@ The project is maintained by [ELIXIR Cloud & AAI][elixir-cloud-aai], a Driver
 Project of the [Global Alliance for Genomics and Health (GA4GH)][ga4gh], under
 the umbrella of the [ELIXIR] [Compute Platform][elixir-compute].
 
-To get in touch with use, please use one of the following routes:
+To get in touch with us, please use one of the following routes:
 
 - For filing bug reports, feature requests or other code-related issues, please
   make use of the project's

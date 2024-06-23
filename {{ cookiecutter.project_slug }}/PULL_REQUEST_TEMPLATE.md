@@ -65,7 +65,7 @@
 > If there are unchecked boxes in the list above, but you would still like your
 > PR to be reviewed or considered for merging, please describe here why boxes
 > were not checked. For example, if you are positive that your commits should
-> _not_ be squased when merging, please explain why you think the PR warrants
+> _not_ be squashed when merging, please explain why you think the PR warrants
 > or requires multiple commits to be added to the history (but note that in
 > that case, it is a prerequisite that all commits follow the Conventional
 > Commits specification).

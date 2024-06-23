@@ -27,7 +27,7 @@ Check out the commands at the
 
 ### Linters and formatters - Ruff
 
-To lint and format python code file, it uses
+To lint and format `Python` code files, it uses
 [Ruff](https://docs.astral.sh/ruff), the default configuration is set in the
 `pyproject.toml` file.
 
@@ -58,12 +58,12 @@ under the `tool.typos.default.extend-words` key.
 mke = 'mke'
 ```
 
-For further configration, refer to the [typos docs](https://pypi.org/project/typos/).
+For further configuration, refer to the [typos docs](https://pypi.org/project/typos/).
 
 ### Static type checker - mypy
 
-Change the configuration in `mypy.ini` file, for further info refer to the
-[mypy documentation](https://mypy.readthedocs.io/en/stable/config_file.html)
+Change the configuration in `mypy.ini` file, for further information refer to
+the [documentation](https://mypy.readthedocs.io/en/stable/config_file.html).
 
 ### Documentation - Sphinx
 
@@ -71,12 +71,12 @@ Configuration for Sphinx is in the `docs/source/conf.py` file, for further info 
 to the [Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/configuration.html).
 The default configuration uses
 [furo theme](https://pradyunsg.me/furo/quickstart/) and
-[ReadTheDocs](https://readthedocs.org/) to host the documentation, you can
-the config using `.readthedocs.yml` file.
+[ReadTheDocs](https://readthedocs.org/) to host the documentation, you can change
+the configuration using `/docs/source/conf.py` and `.readthedocs.yml` file.
 
 ### Testing - pytest and pytest-cov
 
-Geneate a coverage report using `pytest-cov` and uploads it to codecov.io.
+Generate a coverage report using `pytest-cov` and uploads it to codecov.io.
 
 ## CI/CD - GitHub Actions
 
@@ -89,9 +89,9 @@ settings:
 
 ## Disclamer
 
-Some of the links and images have been hardcoded with ELIXIR Cloud & AAI's assests
-in the documentation, please update them manually if need. **Only `README.md` and
-`images/` dir need to be changed.**
+Some of the links and images have been hardcoded with `ELIXIR Cloud & AAI`'s assets
+in the documentation, please update them manually if needed. **Only `README.md` and
+`images/` directory need to be changed.**
 
 ## Contributing
 
@@ -130,7 +130,7 @@ The project is maintained by [ELIXIR Cloud & AAI][elixir-cloud-aai], a Driver
 Project of the [Global Alliance for Genomics and Health (GA4GH)][ga4gh], under
 the umbrella of the [ELIXIR] [Compute Platform][elixir-compute].
 
-To get in touch with use, please use one of the following routes:
+To get in touch with us, please use one of the following routes:
 
 - For filing bug reports, feature requests or other code-related issues, please
   make use of the project's
