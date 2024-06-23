@@ -128,7 +128,7 @@ To get in touch with use, please use one of the following routes:
 
 - For filing bug reports, feature requests or other code-related issues, please
   make use of the project's
-  [issue tracker](https://github.com/elixir-cloud-aai/cloud-components/issues).
+  [issue tracker](https://github.com/elixir-cloud-aai/cookiecutter-python/issues).
 - For private/personal issues, more involved communication, or if you would like
   to join our team as a regular contributor, you can either join our
   [chat board][badge-chat-url] or [email] the community leaders.
