@@ -87,6 +87,12 @@ settings:
 - `CODECOV_TOKEN`: The token for the codecov.io account.
 - `AUTO_UPDATE_GITHUB_TOKEN`: The token for the create a PR to update the template.
 
+## Disclamer
+
+Some of the links and images have been hardcoded with ELIXIR Cloud & AAI's assests
+in the documentation, please update them manually if need. **Only `README.md` and
+`images/` dir need to be changed.**
+
 ## Contributing
 
 This project is a community effort and lives off _your_ contributions, be it in

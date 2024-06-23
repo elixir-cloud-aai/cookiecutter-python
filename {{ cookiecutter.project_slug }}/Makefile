@@ -1,7 +1,7 @@
 # NOTE: This Makefile assumes that dependencies are installed and, if a virtual
 # environment is used, it is activated.
 
-## Variables #################################################################
+## Variables ##################################################################
 
 # NOTE: Define any variables here if needed in the future
 
@@ -11,7 +11,7 @@ default: help
 
 .PHONY: help
 help:
-	@echo "\n++++ Usage: make [target] ++++\n"
+	@echo "\n++++ Usage: make [target] ++++++++++++++++++++++++++++++++++++++++++\n"
 	@echo "Available targets:"
 	@echo "  \033[1m\033[35mclean-venv\033[0m \033[37m(cv)\033[0m"
 	@echo "    \033[36mRemove the virtual environment.\033[0m"
@@ -37,88 +37,81 @@ help:
 
 .PHONY: clean-venv
 clean-venv:
-	@echo "\n++++ Removing the virtual environment ++++\n"
+	@echo "\nRemoving the virtual environment ++++++++++++++++++++++++++++++++++++\n"
 	@rm -rf .venv
-	@echo "Virtual environment removed."
 
 .PHONY: cv
 cv: clean-venv
 
 .PHONY: docs
 docs:
-	@echo "\n++++ Generating project documentation ++++\n"
-	@sphinx-apidoc -f -o docs/pages python_cookiecutter/
+	@echo "\nGenerating project documentation ++++++++++++++++++++++++++++++++++++\n"
+	@sphinx-apidoc -f -o docs/source/pages {{ cookiecutter.project_slug }}/
 	@cd docs && make html
-	@echo "\n++++++++++++++++++++++++++ Summary +++++++++++++++++++++++++++++++++++\n"
+	@echo "\nSummary ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
 	@echo "Documentation generated successfully."
-	@echo "Open docs/_build/html/index.html in your browser."
+	@echo "Open docs/build/html/index.html in your browser."
 	@echo "Or serve it locally using:"
-	@echo "python -m http.server -d docs/_build/html/"
+	@echo "python -m http.server -d docs/build/html/"
 
 .PHONY: d
 d: docs
 
 .PHONY: format-lint
 format-lint:
-	@echo "\n++++ Running linter and formatter using ruff and typos ++++\n"
+	@echo "\nRunning linter and formatter using ruff and typos +++++++++++++++++++\n"
 	@ruff format && ruff check --fix
 	@typos .
-	@echo "Linting and formatting completed."
 
 .PHONY: fl
 fl: format-lint
 
 .PHONY: install
 install:
-	@echo "\n++++ Installing dependencies and {{ cookiecutter.project_slug }} ++++\n"
+	@echo "\nInstalling dependencies and with this package +++++++++++++++++++++++\n"
 	@poetry install
-	@echo "Installation completed."
 
 .PHONY: i
 i: install
 
 .PHONY: precommit-check
 precommit-check:
-	@echo "\n++++ Running pre-commit checks ++++\n"
+	@echo "\nRunning pre-commit checks +++++++++++++++++++++++++++++++++++++++++++\n"
 	@pre-commit run --all-files
-	@echo "Pre-commit checks completed."
 
 .PHONY: pc
 pc: precommit-check
 
 .PHONY: security
 security:
-	@echo "\n++++ Running security scans using bandit and safety ++++\n"
+	@echo "\nRunning security scans using bandit and safety ++++++++++++++++++++++\n"
 	@safety check --full-report
 	@bandit -c pyproject.toml -r {{ cookiecutter.project_slug }}/
-	@echo "Security scans completed."
 
 .PHONY: s
 s: security
 
 .PHONY: test
 test:
-	@echo "\n++++ Running tests using pytest ++++\n"
+	@echo "\nRunning tests using pytest ++++++++++++++++++++++++++++++++++++++++++\n"
 	@pytest tests/
-	@echo "Tests completed."
 
 .PHONY: t
 t: test
 
 .PHONY: type-check
 type-check:
-	@echo "\n++++ Performing type checking with mypy ++++\n"
+	@echo "\nPerforming type checking with mypy ++++++++++++++++++++++++++++++++++\n"
 	@mypy {{ cookiecutter.project_slug }}/
-	@echo "Type checking completed."
 
 .PHONY: tc
 tc: type-check
 
 .PHONY: venv
 venv:
-	@echo "\n++++ Creating a virtual environment ++++\n"
+	@echo "\nCreating a virtual environment ++++++++++++++++++++++++++++++++++++++\n"
 	@python -m venv .venv
-	@echo "\n++++++++++++++++++++++++++ Summary +++++++++++++++++++++++++++++++++++\n"
+	@echo "\nSummary +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
 	@echo "Virtual environment created successfully."
 	@echo "To activate the environment for this shell session, run:"
 	@echo "source .venv/bin/activate"

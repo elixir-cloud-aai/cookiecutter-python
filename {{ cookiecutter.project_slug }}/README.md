@@ -4,7 +4,7 @@
 [![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug }}/badge/?version=latest)](https://{{ cookiecutter.project_slug }}.readthedocs.io/en/latest/?badge=latest)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Python {{ cookiecutter.python_version }}](https://img.shields.io/badge/python-{{ cookiecutter.python_version}}-blue.svg)](https://www.python.org/downloads/release/python-311/)
-[![GitHub contributors](https://img.shields.io/github/contributors/elixir-cloud-aai/{{ cookiecutter.project_slug }})](https://github.com/elixir-cloud-aai/{{ cookiecutter.project_slug }}/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }})](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/graphs/contributors)
 [![Ruff](https://img.shields.io/badge/linter%20&%20formatter-ruff-000000.svg)](https://docs.astral.sh/ruff/)
 [![Safety](https://img.shields.io/badge/security-safety-orange.svg)](https://safetycli.com/product/safety-cli)
 
@@ -16,6 +16,8 @@
 
 For ease, certain scripts have been abbreviated in `Makefile`, make sure that
 have installed the dependencies before running the commands.
+
+> **Note**: `make` commands are only available for Unix-based systems.
 
 To view the commdands available, run:
 
@@ -67,7 +69,8 @@ make tc
 make tc
 ```
 
-> **Note**: This is not the complete list of commands, run `make` to find if more have been added.
+> **Note**: This is not the complete list of commands, run `make` to find if
+> more have been added.
 
 ## Contributing
 
@@ -110,7 +113,7 @@ To get in touch with use, please use one of the following routes:
 
 - For filing bug reports, feature requests or other code-related issues, please
   make use of the project's
-  [issue tracker](https://github.com/elixir-cloud-aai/{{ cookiecutter.project_slug }}/issues).
+  [issue tracker](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/issues).
 - For private/personal issues, more involved communication, or if you would like
   to join our team as a regular contributor, you can either join our
   [chat board][badge-chat-url] or [email] the community leaders.
