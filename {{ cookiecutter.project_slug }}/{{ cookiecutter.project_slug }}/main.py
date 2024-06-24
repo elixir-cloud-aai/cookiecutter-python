@@ -2,7 +2,8 @@
 
 
 def main():
-  print("Hello from python_cookiecutter!")
+  """Main entry point for {{ cookiecutter.project_slug }}."""
+  print("Hello from {{ cookiecutter.project_slug }}!")
 
 
 if __name__ == "__main__":
