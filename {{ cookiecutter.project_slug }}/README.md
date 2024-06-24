@@ -66,7 +66,7 @@ make tc
 - Running all pre-commit checks
 
 ```sh
-make tc
+make pc
 ```
 
 > **Note**: This is not the complete list of commands, run `make` to find if
