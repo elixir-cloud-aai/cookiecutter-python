@@ -2,6 +2,10 @@
 build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core"]
 
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+
 [tool.poetry]
 authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 classifiers = [
@@ -15,7 +19,7 @@ license = "Apache-2.0"
 maintainers = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 name = "{{ cookiecutter.project_slug }}"
 readme = "README.md"
-repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}"
 version = "0.1.0"
 
 [tool.poetry.dependencies]

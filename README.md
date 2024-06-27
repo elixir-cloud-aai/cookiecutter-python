@@ -17,19 +17,37 @@ pip install cruft
 cruft create https://github.com/elixir-cloud-aai/cookiecutter-python.git
 ```
 
+### Don't wanna use cruft?
+
+You can also use the `cookiecutter` command directly:
+
+1. **Install cookiecutter** (if you haven't already):
+
+```sh
+pip install cookiecutter
+```
+
+2. **Generate a New Project**:
+
+```sh
+cookiecutter gh:elixir-cloud-aai/cookiecutter-python
+```
+
+> **Note**: If you're using just `cookiecutter`, manually remove
+  `update-template` job from `update.yaml` github action workflow file as
+  `cookiecutter` doesn't support autosync like cruft.
+
 ## Configurations
 
 ### Package manager - Poetry
 
-This project uses [Poetry](https://python-poetry.org/) as a package manager.
-Check out the commands at the
-[official documentation](https://python-poetry.org/docs/cli/).
+This project uses [Poetry][poetry-org] as a package manager. Check out the
+commands at the [official documentation][poetry-docs].
 
 ### Linters and formatters - Ruff
 
-To lint and format `Python` code files, it uses
-[Ruff](https://docs.astral.sh/ruff), the default configuration is set in the
-`pyproject.toml` file.
+To lint and format `Python` code files, it uses [Ruff][ruff], the default
+configuration is set in the `pyproject.toml` file.
 
 ```toml
 select = [
@@ -43,12 +61,11 @@ select = [
 ]
 ```
 
-To configure it to your needs, refer to the
-[rules documentation](https://docs.astral.sh/ruff/rules/), and for formatter
-configuration, refer to the
-[configuration documentation](https://docs.astral.sh/ruff/formatter)
+To configure it to your needs, refer to the [rules documentation][rudff-linter]
+, and for formatter configuration, refer to the
+[configuration documentation][ruff-formatter].
 
-### Spell checker - typos
+### Spell checker - Typos
 
 If you want to ignore certain words, add them to the `pyproject.toml` file,
 under the `tool.typos.default.extend-words` key.
@@ -58,21 +75,20 @@ under the `tool.typos.default.extend-words` key.
 mke = 'mke'
 ```
 
-For further configuration, refer to the [typos docs](https://pypi.org/project/typos/).
+For further configuration, refer to the [typos docs][typos-docs].
 
-### Static type checker - mypy
+### Static type checker - Mypy
 
-Change the configuration in `mypy.ini` file, for further information refer to
-the [documentation](https://mypy.readthedocs.io/en/stable/config_file.html).
+Change the configuration in `pyproject.toml` file, for further information refer to
+the [documentation][mypy-config].
 
 ### Documentation - Sphinx
 
 Configuration for Sphinx is in the `docs/source/conf.py` file, for further info refer
-to the [Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/configuration.html).
-The default configuration uses
-[furo theme](https://pradyunsg.me/furo/quickstart/) and
-[ReadTheDocs](https://readthedocs.org/) to host the documentation, you can change
-the configuration using `/docs/source/conf.py` and `.readthedocs.yml` file.
+to the [Sphinx documentation][sphinx-docs]. The default configuration uses
+[furo theme][furo] and [ReadTheDocs][rtd] to host the documentation, you can
+change the configuration using `/docs/source/conf.py` and `.readthedocs.yml`
+file.
 
 ### Testing - pytest and pytest-cov
 
@@ -89,9 +105,13 @@ settings:
 
 ## Disclamer
 
-Some of the links and images have been hardcoded with `ELIXIR Cloud & AAI`'s assets
-in the documentation, please update them manually if needed. **Only `README.md` and
-`images/` directory need to be changed.**
+Some of the links and images have been hardcoded with `ELIXIR Cloud & AAI`'s
+assets in the documentation, please update them manually if needed. These
+assets **MUST** be included for projects owned by ELIXIR Cloud & AAI, but
+**MUST NOT** be included for projects that are not (personal projects, projects
+owned by other orgs).
+
+**Only`markdown` files and `images/` directory need to be changed.**
 
 ## Contributing
 
@@ -115,9 +135,9 @@ leaders.
 
 ## Versioning
 
-The project adopts the [semantic versioning](https://semver.org/) scheme for
-versioning. Currently the service is in a pre-release stage, so changes to the
-API, including breaking changes, may occur at any time without further notice.
+The project adopts the [semantic versioning][semver] scheme for versioning.
+Currently the service is in a pre-release stage, so changes to the API,
+including breaking changes, may occur at any time without further notice.
 
 ## License
 
@@ -148,8 +168,19 @@ To get in touch with us, please use one of the following routes:
 [elixir]: https://elixir-europe.org/
 [elixir-cloud-aai]: https://elixir-cloud.dcc.sib.swiss/
 [elixir-compute]: https://elixir-europe.org/platforms/compute
-[email]: mailto:alexander.kanitz@alumni.ethz.ch
+[email]: mailto:cloud-service@elixir-europe.org
 [ga4gh]: https://ga4gh.org/
 [license]: LICENSE
 [logo-elixir]: images/logo-elixir.svg
 [logo-elixir-cloud-aai]: images/logo-elixir-cloud-aai.svg
+[poetry-org]: https://python-poetry.org/
+[poetry-docs]: https://python-poetry.org/docs/cli/
+[ruff]: https://docs.astral.sh/ruff
+[ruff-linter]: https://docs.astral.sh/ruff/rules/
+[ruff-formatter]: https://docs.astral.sh/ruff/formatter
+[typos-docs]: https://pypi.org/project/typos/
+[mypy-config]: https://mypy.readthedocs.io/en/stable/config_file.html
+[sphinx-docs]: https://www.sphinx-doc.org/en/master/usage/configuration.html
+[furo]: https://pradyunsg.me/furo/quickstart/
+[rtd]: https://readthedocs.org/
+[semver]:https://semver.org/

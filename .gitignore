@@ -188,4 +188,4 @@ SquareX Safe File Viewer
 !.yamllint.yaml
 
 # Ignore default generated template
-python_cookiecutter/*
+python-cookiecutter/*

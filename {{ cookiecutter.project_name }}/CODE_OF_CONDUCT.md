@@ -1,4 +1,4 @@
-# ELIXIR Cloud & AAI Code of Conduct
+{% raw %}# ELIXIR Cloud & AAI Code of Conduct
 
 ## Our Pledge
 
@@ -72,4 +72,4 @@ Covenant][contributor-covenant], version 1.4, available at
 <https://www.contributor-covenant.org/version/1/4/code-of-conduct.html>
 
 [contributor-covenant]: https://contributor-covenant.org/
-[elixir-cloud-aai-email]: mailto:cloud-service@elixir-europe.org
+[elixir-cloud-aai-email]: mailto:cloud-service@elixir-europe.org{% endraw %}

@@ -16,7 +16,7 @@ help:
 
 	@echo "Environment Management --------------------------------------------------------"
 	@echo "  \033[1m\033[35mclean-venv\033[0m \033[37m(cv)\033[0m: \033[36mRemove virtual environment.\033[0m"
-	@echo "  \033[1m\033[35minstall\033[0m \033[37m(i)\033[0m: \033[36mInstall dependencies and tes_models.\033[0m"
+	@echo "  \033[1m\033[35minstall\033[0m \033[37m(i)\033[0m: \033[36mInstall dependencies and {{ cookiecutter.project_slug }}.\033[0m"
 	@echo "  \033[1m\033[35mvenv\033[0m \033[37m(v)\033[0m: \033[36mCreate virtual environment.\033[0m\n"
 
 	@echo "Code Quality ------------------------------------------------------------------"
@@ -47,7 +47,7 @@ cv: clean-venv
 .PHONY: docs
 docs:
 	@echo "\nGenerating project documentation ++++++++++++++++++++++++++++++++++++++++++++++\n"
-	@sphinx-apidoc -f -o docs/source/pages tes_models/
+	@sphinx-apidoc -f -o docs/source/pages {{ cookiecutter.project_slug }}
 	@cd docs && make html
 	@echo "\nSummary ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
 	@echo "Documentation generated successfully."
@@ -87,7 +87,7 @@ pc: precommit-check
 security:
 	@echo "\nRunning security scans using bandit and safety ++++++++++++++++++++++++++++++++\n"
 	@safety check --full-report
-	@bandit -c pyproject.toml -r tes_models/
+	@bandit -c pyproject.toml -r {{ cookiecutter.project_slug }}
 
 .PHONY: s
 s: security
@@ -103,7 +103,7 @@ t: test
 .PHONY: type-check
 type-check:
 	@echo "\nPerforming type checking with mypy ++++++++++++++++++++++++++++++++++++++++++++\n"
-	@mypy tes_models/
+	@mypy {{ cookiecutter.project_slug }}
 
 .PHONY: tc
 tc: type-check

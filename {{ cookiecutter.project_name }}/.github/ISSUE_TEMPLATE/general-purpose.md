@@ -1,5 +1,5 @@
 Your issue may already be reported! Please search on the
-[issue tracker](https://github.com/{{ cookiecutter.github_username}}/{{ cookiecutter.project_slug }}/issues) before creating
+[issue tracker](https://github.com/{{ cookiecutter.github_username}}/{{ cookiecutter.project_name }}/issues) before creating
 one.
 
 ## Expected Behavior

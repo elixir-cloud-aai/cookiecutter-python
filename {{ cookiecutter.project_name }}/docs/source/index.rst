@@ -5,6 +5,8 @@ Welcome to {{ cookiecutter.project_slug }}'s documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   pages/modules
+
 Indices and tables
 ==================
 
