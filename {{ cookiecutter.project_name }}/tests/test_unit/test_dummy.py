@@ -6,5 +6,5 @@
 # to avoid the error "Module has no tests" when running the tests with pytest.
 # Cf. https://github.com/pytest-dev/pytest/issues/2393
 def test_placeholder():
-  """Dummy test to avoid the error."""
-  pass
+    """Dummy test to avoid the error."""
+    pass
