@@ -37,6 +37,28 @@ pip install cruft
 cruft create https://github.com/elixir-cloud-aai/cookiecutter-python.git
 ```
 
+3. **Commit and push the generated files** (as applicable to your Git workflow)
+
+Inside the generated project directory:
+
+```sh
+git add .
+git branch -m main
+git commit -m "chore(init): initialize project with https:github.com/elixir-cloud-aai/cookiecutter-python.git"
+```
+
+Push the code to the remote repository:
+
+```sh
+git add remote origin <your-repo-url>
+git push -u origin main
+```
+
+> **Note**: If you want to push your code to GitHub and make use of the
+> generated GitHub Actions workflows, we recommend you to set up the
+> [necessary secrets](#cicd---github-actions) before pushing the code.
+> Otherwise some of workflows may fail.
+
 ### Don't wanna use cruft?
 
 You can also use the `cookiecutter` command directly:
@@ -54,8 +76,8 @@ cookiecutter gh:elixir-cloud-aai/cookiecutter-python
 ```
 
 > **Note**: If you're using just `cookiecutter`, manually remove
-  `update-template` job from `update.yaml` github action workflow file as
-  `cookiecutter` doesn't support autosync like cruft.
+> `update-template` job from `update.yaml` github action workflow file as
+> `cookiecutter` doesn't support autosync like cruft.
 
 ## Configurations
 
@@ -82,8 +104,8 @@ select = [
 ```
 
 To configure it to your needs, refer to the [rules documentation][rudff-linter]
-, and for formatter configuration, refer to the
-[configuration documentation][ruff-formatter].
+, and for formatter configuration, refer to the [configuration
+documentation][ruff-formatter].
 
 ### Spell checker - Typos
 
@@ -99,43 +121,58 @@ For further configuration, refer to the [typos docs][typos-docs].
 
 ### Static type checker - Mypy
 
-Change the configuration in `pyproject.toml` file, for further information refer to
-the [documentation][mypy-config].
+Change the configuration in `pyproject.toml` file, for further information refer
+to the [documentation][mypy-config].
 
 ### Documentation - Sphinx
 
-Configuration for Sphinx is in the `docs/source/conf.py` file, for further info refer
-to the [Sphinx documentation][sphinx-docs]. The default configuration uses
+Configuration for Sphinx is in the `docs/source/conf.py` file, for further info
+refer to the [Sphinx documentation][sphinx-docs]. The default configuration uses
 [furo theme][furo] and [ReadTheDocs][rtd] to host the documentation, you can
 change the configuration using `/docs/source/conf.py` and `.readthedocs.yml`
 file.
 
 > **Note**: Make sure to setup the `ReadTheDocs` account and add the project to
-  the account to host the documentation.
+> the account to host the documentation.
 
 ### Testing - pytest and pytest-cov
 
 Generate a coverage report using `pytest-cov` and uploads it to codecov.io.
 
 > **Note**: Make sure to setup the `Codecov` account and add the project to the
-  account to host the coverage report and add github [token](#cicd---github-actions).
+> account to host the coverage report and add github
+> [token](#cicd---github-actions).
 
 ## CI/CD - GitHub Actions
 
 Here are the GitHub Actions Secrets that need to be included in the repository
 settings:
 
-- `PYPI_PASSWORD`: PyPI account password.
+- `PYPI_TOKEN`: PyPI account password.
+
+    > **Note**: PyPI account token scoped to this repository (requires the
+    > project to exist prior to using the Cookiecutter) or to all repositories.
+    > To set up the token, visit <https://pypi.org>, log in, go to
+    > `Account settings` in the user menu and hit the `Add API token` button in
+    > the `API tokens` section. Add a name, choose the scope and create the
+    > token.
+
 - `CODECOV_TOKEN`: Codecov token.
-- `AUTO_UPDATE_GITHUB_TOKEN`: GitHub token with permissions to write to the repository.
+
+    > **Note**: To set up the token, visit <https://codecov.io/>, log in, find the
+    > repository that you want to set up (you may need to "Resync") and hit the
+    > "Configure" button. The token should show up in the "Coverage" tab.
+
+- `AUTO_UPDATE_GITHUB_TOKEN`: GitHub token with permissions to write to the
+    repository.
 
 ## Disclamer
 
 Some of the links and images have been hardcoded with `ELIXIR Cloud & AAI`'s
-assets in the documentation, please update them manually if needed. These
-assets **MUST** be included for projects owned by ELIXIR Cloud & AAI, but
-**MUST NOT** be included for projects that are not (personal projects, projects
-owned by other orgs).
+assets in the documentation, please update them manually if needed. These assets
+**MUST** be included for projects owned by ELIXIR Cloud & AAI, but **MUST NOT**
+be included for projects that are not (personal projects, projects owned by
+other orgs).
 
 **Only`markdown` files and `images/` directory need to be changed.**
 
@@ -178,12 +215,12 @@ the umbrella of the [ELIXIR][elixir] [Compute Platform][elixir-compute].
 
 To get in touch with us, please use one of the following routes:
 
-- For filing bug reports, feature requests or other code-related issues, please
-  make use of the project's
-  [issue tracker](https://github.com/elixir-cloud-aai/cookiecutter-python/issues).
-- For private/personal issues, more involved communication, or if you would like
-  to join our team as a regular contributor, you can either join our
-  [chat board][badge-chat-url] or [email] the community leaders.
+- For filing bug reports, feature requests or other code-related issues,
+    please make use of the project's
+    [issue tracker](https://github.com/elixir-cloud-aai/cookiecutter-python/issues).
+- For private/personal issues, more involved communication, or if you would
+    like to join our team as a regular contributor, you can either join our
+    [chat board][badge-chat-url] or [email] the community leaders.
 
 [![logo-elixir]][elixir] [![logo-elixir-cloud-aai]][elixir-cloud-aai]
 
@@ -202,11 +239,10 @@ To get in touch with us, please use one of the following routes:
 [poetry-org]: https://python-poetry.org/
 [poetry-docs]: https://python-poetry.org/docs/cli/
 [ruff]: https://docs.astral.sh/ruff
-[ruff-linter]: https://docs.astral.sh/ruff/rules/
 [ruff-formatter]: https://docs.astral.sh/ruff/formatter
 [typos-docs]: https://pypi.org/project/typos/
 [mypy-config]: https://mypy.readthedocs.io/en/stable/config_file.html
 [sphinx-docs]: https://www.sphinx-doc.org/en/master/usage/configuration.html
 [furo]: https://pradyunsg.me/furo/quickstart/
 [rtd]: https://readthedocs.org/
-[semver]:https://semver.org/
+[semver]: https://semver.org/
