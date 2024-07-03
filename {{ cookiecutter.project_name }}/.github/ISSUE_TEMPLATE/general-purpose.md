@@ -1,6 +1,5 @@
 Your issue may already be reported! Please search on the
-[issue tracker](https://github.com/{{ cookiecutter.github_username}}/{{ cookiecutter.project_name }}/issues) before creating
-one.
+[issue tracker][issue-tracker] before creating one.
 
 ## Expected Behavior
 
@@ -27,9 +26,6 @@ one.
 <!--- reproduce this bug. Include code to reproduce, if relevant -->
 
 1.
-2.
-3.
-4.
 
 ## Context
 
@@ -45,3 +41,5 @@ one.
 - Browser Name and version:
 - Operating System and version (desktop or mobile):
 - Link to your project:
+
+[issue-tracker]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/issues

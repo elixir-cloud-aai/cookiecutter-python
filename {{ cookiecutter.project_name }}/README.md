@@ -1,17 +1,9 @@
-\[!\[Actions status\](https://github.com/elixir-cloud-aai/Python
-Cookiecutter/workflows/CI/badge.svg)\](https://github.com/elixir-cloud-aai/Python
-Cookiecutter/actions)
 [![Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://bandit.readthedocs.io/en/latest/)
-\[!\[codecov\](https://codecov.io/gh/elixir-cloud-aai/Python
-Cookiecutter/branch/main/graph/badge.svg)\](https://codecov.io/gh/elixir-cloud-aai/Python
-Cookiecutter)
-[![Documentation Status](https://readthedocs.org/projects/python_cookiecutter/badge/?version=latest)](https://python_cookiecutter.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/branch/main/graph/badge.svg)](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }})
+[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug }}/badge/?version=latest)](https://{{ cookiecutter.project_slug }}.readthedocs.io/en/latest/?badge=latest)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
-[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-311/)
-\[!\[GitHub
-contributors\](https://img.shields.io/github/contributors/elixir-cloud-aai/Python
-Cookiecutter)\](https://github.com/elixir-cloud-aai/Python
-Cookiecutter/graphs/contributors)
+[![Python {{ cookiecutter.python_version }}](https://img.shields.io/badge/python-{{ cookiecutter.python_version }}-blue.svg)](https://www.python.org/)
+[![GitHub contributors](https://img.shields.io/github/contributors/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }})](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/graphs/contributors)
 [![Ruff](https://img.shields.io/badge/linter%20&%20formatter-ruff-000000.svg)](https://docs.astral.sh/ruff/)
 [![Safety](https://img.shields.io/badge/security-safety-orange.svg)](https://safetycli.com/product/safety-cli)
 
@@ -116,9 +108,9 @@ leaders.
 
 ## Versioning
 
-The project adopts the [semantic versioning](https://semver.org/) scheme for
-versioning. Currently the software is in a pre-release stage, so changes to the
-API, including breaking changes, may occur at any time without further notice.
+The project adopts the [semantic versioning][semver] scheme for versioning.
+Currently the software is in a pre-release stage, so changes to the API,
+including breaking changes, may occur at any time without further notice.
 
 ## License
 
@@ -134,8 +126,7 @@ the umbrella of the [ELIXIR] [Compute Platform][elixir-compute].
 To get in touch with us, please use one of the following routes:
 
 - For filing bug reports, feature requests or other code-related issues, please
-  make use of the project's \[issue
-  tracker\](https://github.com/elixir-cloud-aai/Python Cookiecutter/issues).
+  make use of the project's [issue tracker][issue-tracker].
 - For private/personal issues, more involved communication, or if you would like
   to join our team as a regular contributor, you can either join our
   [chat board][badge-chat-url] or [email] the community leaders.
@@ -151,6 +142,8 @@ To get in touch with us, please use one of the following routes:
 [elixir-compute]: https://elixir-europe.org/platforms/compute
 [email]: mailto:cloud-service@elixir-europe.org
 [ga4gh]: https://ga4gh.org/
+[issue-tracker]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/issues
 [license]: LICENSE
 [logo-elixir]: images/logo-elixir.svg
 [logo-elixir-cloud-aai]: images/logo-elixir-cloud-aai.svg
+[semver]: https://semver.org/
