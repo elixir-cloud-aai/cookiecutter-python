@@ -15,9 +15,24 @@ Cookiecutter/graphs/contributors)
 [![Ruff](https://img.shields.io/badge/linter%20&%20formatter-ruff-000000.svg)](https://docs.astral.sh/ruff/)
 [![Safety](https://img.shields.io/badge/security-safety-orange.svg)](https://safetycli.com/product/safety-cli)
 
-# python_cookiecutter
+# {{ cookiecutter.project_name }}
 
-A short description of the project.
+{{ cookiecutter.short_description }}
+
+## Table of Contents
+
+- [Basic Usage](#basic-usage)
+- [Installation](#installation)
+- [Development](#development)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Versioning](#versioning)
+- [License](#license)
+- [Contact](#contact)
+
+## Basic Usage
+
+## Installation
 
 ## Development
 
@@ -114,7 +129,7 @@ copy of which is also available in [`LICENSE`][license].
 
 The project is maintained by [ELIXIR Cloud & AAI][elixir-cloud-aai], a Driver
 Project of the [Global Alliance for Genomics and Health (GA4GH)][ga4gh], under
-the umbrella of the [ELIXIR] [Compute Platform][elixir-compute].
+the umbrella of the [ELIXIR][elixir] [Compute Platform][elixir-compute].
 
 To get in touch with us, please use one of the following routes:
 

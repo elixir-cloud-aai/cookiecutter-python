@@ -3,6 +3,26 @@
 This is a Cookiecutter template for creating a Python project with Poetry,
 including configurations for various project settings.
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configurations](#configurations)
+  - [Package manager - Poetry](#package-manager---poetry)
+  - [Linters and formatters - Ruff](#linters-and-formatters---ruff)
+  - [Spell checker - Typos](#spell-checker---typos)
+  - [Static type checker - Mypy](#static-type-checker---mypy)
+  - [Documentation - Sphinx](#documentation---sphinx)
+  - [Testing - pytest and pytest-cov](#testing---pytest-and-pytest-cov)
+- [CI/CD - GitHub Actions](#cicd---github-actions)
+- [Disclaimer](#disclaimer)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Versioning](#versioning)
+- [License](#license)
+- [Contact](#contact)
+
 ## Usage
 
 1. **Install cruft** (if you haven't already):
@@ -90,18 +110,24 @@ to the [Sphinx documentation][sphinx-docs]. The default configuration uses
 change the configuration using `/docs/source/conf.py` and `.readthedocs.yml`
 file.
 
+> **Note**: Make sure to setup the `ReadTheDocs` account and add the project to
+  the account to host the documentation.
+
 ### Testing - pytest and pytest-cov
 
 Generate a coverage report using `pytest-cov` and uploads it to codecov.io.
+
+> **Note**: Make sure to setup the `Codecov` account and add the project to the
+  account to host the coverage report and add github [token](#cicd---github-actions).
 
 ## CI/CD - GitHub Actions
 
 Here are the GitHub Actions Secrets that need to be included in the repository
 settings:
 
-- `PYPI_PASSWORD`: The password for the PyPI account.
-- `CODECOV_TOKEN`: The token for the codecov.io account.
-- `AUTO_UPDATE_GITHUB_TOKEN`: The token for the create a PR to update the template.
+- `PYPI_PASSWORD`: PyPI account password.
+- `CODECOV_TOKEN`: Codecov token.
+- `AUTO_UPDATE_GITHUB_TOKEN`: GitHub token with permissions to write to the repository.
 
 ## Disclamer
 
@@ -148,7 +174,7 @@ copy of which is also available in [`LICENSE`][license].
 
 The project is maintained by [ELIXIR Cloud & AAI][elixir-cloud-aai], a Driver
 Project of the [Global Alliance for Genomics and Health (GA4GH)][ga4gh], under
-the umbrella of the [ELIXIR] [Compute Platform][elixir-compute].
+the umbrella of the [ELIXIR][elixir] [Compute Platform][elixir-compute].
 
 To get in touch with us, please use one of the following routes:
 
