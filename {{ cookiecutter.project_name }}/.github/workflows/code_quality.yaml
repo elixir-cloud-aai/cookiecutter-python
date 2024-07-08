@@ -22,8 +22,8 @@ jobs:
         with:
           {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          poetry-install-options: "--only=lint --no-root"
-          poetry-export-options: "--only=lint"
+          poetry-install-options: "--only=code_quality --no-root"
+          poetry-export-options: "--only=code_quality"
 
       - name: Check code style
         run: poetry run ruff format --check
@@ -40,8 +40,8 @@ jobs:
         with:
           {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          poetry-install-options: "--only=lint --no-root"
-          poetry-export-options: "--only=lint"
+          poetry-install-options: "--only=code_quality --no-root"
+          poetry-export-options: "--only=code_quality"
 
       - name: Check code quality
         run: poetry run ruff check .
@@ -58,8 +58,8 @@ jobs:
         with:
           {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          poetry-install-options: "--only=lint --no-root"
-          poetry-export-options: "--only=lint"
+          poetry-install-options: "--only=code_quality --no-root"
+          poetry-export-options: "--only=code_quality"
 
       - name: Check spellings
         run: poetry run typos .
@@ -76,8 +76,8 @@ jobs:
         with:
           {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          poetry-install-options: "--with=types --no-root"
-          poetry-export-options: "--with=types"
+          poetry-install-options: "--with=code_quality,types --no-root"
+          poetry-export-options: "--with=code_quality,types"
 
       - name: Check types
         run: poetry run mypy {{ cookiecutter.project_slug}}/

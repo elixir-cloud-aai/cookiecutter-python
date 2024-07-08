@@ -22,8 +22,8 @@ jobs:
         with:
           {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          poetry-install-options: "--with=docs"
-          poetry-export-options: "--with=docs"
+          poetry-install-options: "--with=docs,types --no-root"
+          poetry-export-options: "--with=docs,types"
 
       - name: Generate API docs
         run: |

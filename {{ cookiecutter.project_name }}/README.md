@@ -47,11 +47,30 @@ Here are certain commands that you might find useful:
 make v
 ```
 
-- Installing dependencies
+- Installing all dependencies including optional dependencies
 
 ```sh
 make i
 ```
+
+> **Note**: This project uses optional dependency groups such as `types`,
+> `code_quality`, `docs`, `vulnerability`, `test`, and `misc`. To install stubs
+> or types for the dependencies, you **must** use the following command:
+>
+> ```sh
+> poetry add types-foo --group types
+> ```
+>
+> Replace `types-foo` with the name of the package for the types. All runtime
+> dependencies should be added to the `default` group. For example, to install
+> `requests` and its type stubs, run:
+>
+> ```sh
+> poetry add requests
+> poetry add types-requests --group types
+> ```
+>
+> This ensures that the type checker functions correctly.
 
 - Running tests
 

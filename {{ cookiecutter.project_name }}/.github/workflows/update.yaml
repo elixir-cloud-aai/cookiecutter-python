@@ -17,8 +17,8 @@ jobs:
         with:
           {% raw %}os: ${{ job.os }}{% endraw %}
           python-version: '{{ cookiecutter.python_version }}'
-          poetry-install-options: "--with=misc --no-root"
-          poetry-export-options: "--with=misc"
+          poetry-install-options: "--only=misc --no-root"
+          poetry-export-options: "--only=misc"
 
       - name: Update project structure
         run: |
