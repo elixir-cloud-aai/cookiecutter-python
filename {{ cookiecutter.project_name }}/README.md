@@ -33,7 +33,7 @@ have installed the dependencies before running the commands.
 
 > **Note**: `make` commands are only available for Unix-based systems.
 
-To view the commdands available, run:
+To view the commands available, run:
 
 ```sh
 make
@@ -83,7 +83,7 @@ make tc
 make pc
 ```
 
-> **Note**: This is not the complete list of commands, run `make` to find if
+> **Note**: This is not the complete list of commands, run `make` to find out if
 > more have been added.
 
 ## Contributing

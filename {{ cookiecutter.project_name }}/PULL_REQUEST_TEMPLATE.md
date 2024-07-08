@@ -41,7 +41,7 @@ your PR is ready to be merged even though not all boxes were ticked off). -->
   or updated existing ones (only for Python, TypeScript, etc.)
 - \[ \] I have provided appropriate documentation
   ([Google-style Python docstrings][py-doc-google]) for all
-  packages/modules/functions/classes/ methods or updated existing ones
+  packages/modules/functions/classes/methods or updated existing ones
 - \[ \] My changes generate no new warnings
 - \[ \] I have added tests that prove my fix is effective or that my feature
   works
