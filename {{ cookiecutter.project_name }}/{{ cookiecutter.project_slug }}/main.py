@@ -1,4 +1,3 @@
-{% if cookiecutter.add_script == 'y' %}
 """Entry point for python_cookiecutter."""
 
 
@@ -9,5 +8,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-{% endif %}
