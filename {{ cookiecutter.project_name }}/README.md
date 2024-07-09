@@ -90,6 +90,9 @@ make fl
 make d
 ```
 
+> **Note**: If you make changes to the code, make sure to generate and push the
+> documentation using above command, else the documentation check CI will fail.
+
 - Running type checker
 
 ```sh

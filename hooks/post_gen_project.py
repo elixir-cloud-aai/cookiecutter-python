@@ -1,14 +1,17 @@
 import os
 from pathlib import Path
+import shutil
 
-def remove_script_file():
-  """Remove the console script init file.
+project_slug = '{{cookiecutter.project_slug}}'
 
-  Removes the main.py file if the user does not want to add a script file.
-  """
-  if '{{cookiecutter.add_script}}' != 'y':
-    script_path = Path.cwd() / '{{cookiecutter.project_name}}' / 'main.py'
-    if os.path.exists(script_path):
-        os.remove(script_path)
+def remove(filepath):
+    if os.path.isfile(filepath):
+        os.remove(filepath)
+    elif os.path.isdir(filepath):
+        shutil.rmtree(filepath)
 
-remove_script_file()
+create_main_file = '{{cookiecutter.add_script}}' == 'y'
+
+if not create_main_file:
+    main_file_path = Path.cwd() / project_slug / 'main.py'
+    remove(main_file_path)
