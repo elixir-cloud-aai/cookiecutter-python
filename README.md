@@ -187,14 +187,10 @@ you are interested in contributing.
 
 ## Code of Conduct
 
-Please mind the code of conduct described in
-[`CODE_OF_CONDUCT.md`][code-of-conduct] for all interactions with the community.
-Please be nice to one another! :)
-
-If you experience any unacceptable behavior by any member of the community,
-please refer to the contact method specified in
-[`CODE_OF_CONDUCT.md`][code-of-conduct] to report the incident to the community
-leaders.
+We kindly request all contributors to abide by our
+[organization's Code of Conduct][code-of-conduct]. Please also refer to this
+document if you want to report an incident with respect to conduct in our
+community. Thank you for your cooperation.
 
 ## Versioning
 
@@ -226,7 +222,7 @@ To get in touch with us, please use one of the following routes:
 
 [badge-chat-url]: https://join.slack.com/t/elixir-cloud/shared_invite/enQtNzA3NTQ5Mzg2NjQ3LTZjZGI1OGQ5ZTRiOTRkY2ExMGUxNmQyODAxMDdjM2EyZDQ1YWM0ZGFjOTJhNzg5NjE0YmJiZTZhZDVhOWE4MWM
 [badge-license-url]: http://www.apache.org/licenses/LICENSE-2.0
-[code-of-conduct]: CODE_OF_CONDUCT.md
+[code-of-conduct]: https://elixir-cloud-aai.github.io/about/code-of-conduct/
 [contributing]: https://elixir-cloud-aai.github.io/guides/guide-contributor/
 [elixir]: https://elixir-europe.org/
 [elixir-cloud-aai]: https://elixir-cloud.dcc.sib.swiss/
