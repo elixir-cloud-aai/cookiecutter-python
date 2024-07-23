@@ -166,6 +166,11 @@ settings:
 - `AUTO_UPDATE_GITHUB_TOKEN`: GitHub token with permissions to write to the
     repository.
 
+    > Since Jan 2022, registries/organisations must explicitly grant the authority
+    > to create a pull request. This can be enabled on a per-organisation level,
+    > or a per-registry level for personal projects. See [GitHub][gh-update-token]
+    > for more details.
+
 ## Disclamer
 
 Some of the links and images have been hardcoded with `ELIXIR Cloud & AAI`'s
@@ -229,6 +234,7 @@ To get in touch with us, please use one of the following routes:
 [elixir-compute]: https://elixir-europe.org/platforms/compute
 [email]: mailto:cloud-service@elixir-europe.org
 [ga4gh]: https://ga4gh.org/
+[gh-update-token]: https://github.blog/changelog/2022-05-03-github-actions-prevent-github-actions-from-creating-and-approving-pull-requests/
 [license]: LICENSE
 [logo-elixir]: images/logo-elixir.svg
 [logo-elixir-cloud-aai]: images/logo-elixir-cloud-aai.svg
