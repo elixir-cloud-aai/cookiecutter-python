@@ -1,5 +1,5 @@
 ---
-name: Code Test
+name: Code test
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   integration-test:
-    name: Integration Test
+    name: Integration test
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -42,7 +42,7 @@ jobs:
           verbose: true
 
   unit-test:
-    name: Unit Test
+    name: Unit test
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository

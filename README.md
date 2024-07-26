@@ -1,4 +1,4 @@
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)][code_of_conduct]
 [![GitHub contributors](https://img.shields.io/github/contributors/elixir-cloud-aai/cookiecutter-python/)](https://github.com/elixir-cloud-aai/cookiecutter-python/graphs/contributors)
 
 # Python Cookiecutter Template
@@ -28,7 +28,7 @@ including configurations for various project settings.
 
 ## Usage
 
-1. **Install cruft** (if you haven't already):
+1. **Install Cruft** (if you haven't already):
 
 ```sh
 pip install cruft
@@ -62,7 +62,7 @@ git push -u origin main
 > [necessary secrets](#cicd---github-actions) before pushing the code.
 > Otherwise some of workflows may fail.
 
-### Don't wanna use cruft?
+### Don't wanna use Cruft?
 
 You can also use the `cookiecutter` command directly:
 
@@ -80,7 +80,7 @@ cookiecutter gh:elixir-cloud-aai/cookiecutter-python
 
 > **Note**: If you're using just `cookiecutter`, manually remove
 > `update-template` job from `update.yaml` github action workflow file as
-> `cookiecutter` doesn't support autosync like cruft.
+> `cookiecutter` doesn't support autosync like Cruft.
 
 ## Configurations
 

@@ -1,5 +1,5 @@
 ---
-name: PR Evaluation
+name: PR evaluation
 
 on:
   pull_request:

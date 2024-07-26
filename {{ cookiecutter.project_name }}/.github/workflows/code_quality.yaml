@@ -1,5 +1,5 @@
 ---
-name: Code Quality
+name: Code quality
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         run: poetry run ruff check .
 
   spell-check:
-    name: Spell Check
+    name: Spell check
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -65,7 +65,7 @@ jobs:
         run: poetry run typos .
 
   type-check:
-    name: Type Check
+    name: Type check
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository

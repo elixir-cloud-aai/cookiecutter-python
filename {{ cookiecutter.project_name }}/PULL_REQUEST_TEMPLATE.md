@@ -12,6 +12,10 @@ the relevant motivation and context briefly. For very trivial changes that are
 duly explained by the PR title, a description can be omitted. -->
 
 - Fixes #(issue number)
+<!-- Example:
+
+Fixes #2 #3 #4
+-->
 
 #### Checklist
 
@@ -22,7 +26,7 @@ comments or to fix failing automated checks. **Please check items also if they
 do not apply to your change**, e.g., if your change does not require an update
 of the user-facing documentation, still check the box.
 
-Generally, **PRs are only reviewed when all boxes are ticked off and all
+Generally, **PRs are only reviewed when ALL BOXES are ticked off and all
 automated checks pass** (use the comment section below if you believe that
 your PR is ready to be merged even though not all boxes were ticked off). -->
 

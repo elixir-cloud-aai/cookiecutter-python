@@ -1,4 +1,4 @@
-"""Entry point for python_cookiecutter."""
+"""Entry point for {{ cookiecutter.project_slug }}."""
 
 
 def main():

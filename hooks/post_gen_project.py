@@ -5,10 +5,8 @@ import shutil
 project_slug = '{{cookiecutter.project_slug}}'
 
 def remove(filepath):
-    if os.path.isfile(filepath):
-        os.remove(filepath)
-    elif os.path.isdir(filepath):
-        shutil.rmtree(filepath)
+    if Path.is_file(filepath):
+        Path.unlink(filepath)
 
 create_main_file = '{{cookiecutter.add_script}}' == 'y'
 

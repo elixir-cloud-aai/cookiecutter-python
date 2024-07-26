@@ -1,10 +1,9 @@
-"""Dummy test file to avoid the error."""
+"""Dummy test file to avoid "Module has no tests" error."""
 
 
-# TODO: Remove this file when adding real tests.
-# This test is a placeholder for the integration tests. It is a workaround
-# to avoid the error "Module has no tests" when running the tests with pytest.
-# Cf. https://github.com/pytest-dev/pytest/issues/2393
 def test_placeholder():
-    """Dummy test to avoid the error."""
-    pass
+    """Dummy test for CI workflow
+
+    This test is a placeholder for the integration tests. It is a workaround
+    to avoid the error "Module has no tests" when running the tests with pytest.
+    """ 

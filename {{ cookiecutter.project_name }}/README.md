@@ -1,6 +1,6 @@
 [![Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://bandit.readthedocs.io/en/latest/)
 [![codecov](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/branch/main/graph/badge.svg)](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }})
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)][code_of_conduct]
 [![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug }}/badge/?version=latest)](https://{{ cookiecutter.project_slug }}.readthedocs.io/en/latest/?badge=latest)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Python {{ cookiecutter.python_version }}](https://img.shields.io/badge/python-{{ cookiecutter.python_version }}-blue.svg)](https://www.python.org/)
@@ -29,7 +29,7 @@
 
 ## Development
 
-For ease, certain scripts have been abbreviated in `Makefile`, make sure that
+For ease of use, certain scripts have been abbreviated in `Makefile`, make sure that
 you have installed the dependencies before running the commands.
 
 > **Note**: `make` commands are only available for Unix-based systems.
@@ -42,13 +42,13 @@ make
 
 Here are certain commands that you might find useful:
 
-- Making a virtual environment
+- Make a virtual environment
 
 ```sh
 make v
 ```
 
-- Installing all dependencies including optional dependencies
+- Install all dependencies including optional dependencies
 
 ```sh
 make i
@@ -76,19 +76,19 @@ make i
 > **Note**: Since the dependencies are segregated into groups, if you add a new
 > group make sure to add it in `make install` command in [Makefile](Makefile).
 
-- Running tests
+- Run tests
 
 ```sh
 make t
 ```
 
-- Running linter, formatter and spell checker
+- Run linter, formatter and spell checker
 
 ```sh
 make fl
 ```
 
-- Building the documentation
+- Build the documentation
 
 ```sh
 make d
@@ -97,13 +97,13 @@ make d
 > **Note**: If you make changes to the code, make sure to generate and push the
 > documentation using above command, else the documentation check CI will fail.
 
-- Running type checker
+- Run type checker
 
 ```sh
 make tc
 ```
 
-- Running all pre-commit checks
+- Run all pre-commit checks
 
 ```sh
 make pc

@@ -1,5 +1,5 @@
 ---
-name: Documentation Check
+name: Documentation check
 
 on:
   push:
@@ -27,9 +27,9 @@ jobs:
 
       - name: Generate API docs
         run: |
-          poetry run sphinx-apidoc -o /tmp/docs/source/pages tus_storagehandler/
+          poetry run sphinx-apidoc -o /tmp/docs/source/pages {{ cookiecutter.project_slug }}/
 
-      - name: Compare docs with main branch
+      - name: Compare current docs with latest docs
         id: check_docs_diff
         run: |
           shasum /tmp/docs/source/pages/* > /tmp/docs.sha
