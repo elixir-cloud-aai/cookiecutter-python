@@ -27,7 +27,9 @@ jobs:
 
       - name: Generate API docs
         run: |
-          poetry run sphinx-apidoc -o /tmp/docs/source/pages {{ cookiecutter.project_slug }}/
+          poetry run sphinx-apidoc  \
+            -o /tmp/docs/source/pages \
+            {{ cookiecutter.project_slug }}/
 
       - name: Compare current docs with latest docs
         id: check_docs_diff

@@ -12,6 +12,7 @@ the relevant motivation and context briefly. For very trivial changes that are
 duly explained by the PR title, a description can be omitted. -->
 
 - Fixes #(issue number)
+
 <!-- Example:
 
 Fixes #2 #3 #4

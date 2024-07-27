@@ -68,9 +68,9 @@ jobs:
 
       - name: Check length of PR title
         run: |
-          PR_TITLE="${{ github.event.pull_request.title }}"
+          {% raw %}PR_TITLE="${{ github.event.pull_request.title }}"
           if [ ${#PR_TITLE} -gt 50 ]; then
             echo "The PR title is too long. Please keep it under 50 characters."
             exit 1
-          fi
+          fi{% endraw %}
 ...
