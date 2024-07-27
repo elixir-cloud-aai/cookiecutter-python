@@ -42,7 +42,8 @@ jobs:
     {% raw %}if: ${{ github.event.action != 'edited' ||
             github.event.changes.title != null }}{% endraw %}
     steps:
-      - uses: amannn/action-semantic-pull-request@v5
+      - name: Check if the PR title is semantic
+        uses: amannn/action-semantic-pull-request@v5
         env:
           {% raw %}GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}{% endraw %}
         with:
@@ -64,4 +65,12 @@ jobs:
             didn't match the configured pattern. Please ensure that the subject
             doesn't start with an uppercase character & not have more than 50
             characters.
+
+      - name: Check length of PR title
+        run: |
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          if [ ${#PR_TITLE} -gt 50 ]; then
+            echo "The PR title is too long. Please keep it under 50 characters."
+            exit 1
+          fi
 ...

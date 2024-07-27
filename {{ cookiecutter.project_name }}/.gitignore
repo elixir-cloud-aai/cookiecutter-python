@@ -1,6 +1,10 @@
-######## This section contains auto-generated .gitignore patterns for #########
-######## Python projects. Write project level gitignore below this    #########
-######## section.                                                     #########
+######### User-defined project-specific ignore patterns.              #########
+######### Add your custom ignore patterns HERE.                       #########
+
+######### End of user-defined project-specific ignore patterns.       #########
+
+######## This section contains auto-generated ignore patterns for     #########
+######## Python projects.                                             #########
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
@@ -174,10 +178,4 @@ pyrightconfig.json
 SquareX Safe File Viewer
 ✕
 
-######### End of auto generated .gitignore file for Python projects. #########
-
-######### Project level .gitignore.                                  #########
-
-# Keep pre-commit hooks and .yamllint file
-!.pre-commit-config.yaml
-!.yamllint.yaml
+######### End of auto-generated ignore patterns for Python projects.  #########
