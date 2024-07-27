@@ -15,7 +15,11 @@ duly explained by the PR title, a description can be omitted. -->
 
 <!-- Example:
 
-Fixes #2 #3 #4
+Fixes #1
+Fixes #2
+
+- Address bug X by Y
+- Add support for feature X through Y
 -->
 
 #### Checklist
