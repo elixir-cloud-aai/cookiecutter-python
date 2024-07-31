@@ -53,7 +53,7 @@ git commit -m "chore(init): initialize project with https:github.com/elixir-clou
 Push the code to the remote repository:
 
 ```sh
-git add remote origin <your-repo-url>
+git remote add origin <your-repo-url>
 git push -u origin main
 ```
 
@@ -106,7 +106,7 @@ select = [
 ]
 ```
 
-To configure it to your needs, refer to the [rules documentation][rudff-linter]
+To configure it to your needs, refer to the [rules documentation][ruff-linter]
 , and for formatter configuration, refer to the [configuration
 documentation][ruff-formatter].
 
@@ -135,15 +135,15 @@ refer to the [Sphinx documentation][sphinx-docs]. The default configuration uses
 change the configuration using `/docs/source/conf.py` and `.readthedocs.yml`
 file.
 
-> **Note**: Make sure to setup the `ReadTheDocs` account and add the project to
-> the account to host the documentation.
+> **Note**: Make sure to set up the `ReadTheDocs` account and add the projects
+> to the account to host the documentation.
 
 ### Testing - pytest and pytest-cov
 
 Generate a coverage report using `pytest-cov` and uploads it to codecov.io.
 
-> **Note**: Make sure to setup the `Codecov` account and add the project to the
-> account to host the coverage report and add github
+> **Note**: Make sure to set up the `Codecov` account and add the project to 
+> the account to host the coverage report and add github
 > [token](#cicd---github-actions).
 
 ## CI/CD - GitHub Actions
@@ -174,7 +174,7 @@ settings:
     > or a per-registry level for personal projects. See [GitHub][gh-update-token]
     > for more details.
 
-## Disclamer
+## Disclaimer
 
 Some of the links and images have been hardcoded with `ELIXIR Cloud & AAI`'s
 assets in the documentation, please update them manually if needed. These assets
@@ -182,7 +182,7 @@ assets in the documentation, please update them manually if needed. These assets
 be included for projects that are not (personal projects, projects owned by
 other orgs).
 
-**Only`markdown` files and `images/` directory need to be changed.**
+**Only `markdown` files and `images/` directory need to be changed.**
 
 ## Contributing
 
