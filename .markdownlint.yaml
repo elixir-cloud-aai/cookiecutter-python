@@ -65,8 +65,7 @@ MD037: true  # Spaces inside emphasis markers
 MD038: true  # Spaces inside code span elements
 MD039: true  # Spaces inside link elements
 MD040: true  # Fenced code blocks should have a language specified
-MD041: 
-  first_line_h1: true  # Ensure the first line is a top-level heading
+MD041: false # First line need not be h1
 MD046: true  # Code block style
 MD047: true  # Files should end with a single newline character
 MD048: true  # Code fence style

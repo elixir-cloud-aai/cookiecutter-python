@@ -72,7 +72,7 @@ make i
 > ```
 >
 > This ensures that the type checker functions correctly.
-
+>
 > **Note**: Since the dependencies are segregated into groups, if you add a new
 > group make sure to add it in `make install` command in [Makefile](Makefile).
 

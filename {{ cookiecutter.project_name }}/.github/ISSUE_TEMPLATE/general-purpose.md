@@ -9,9 +9,11 @@ Your issue may already be reported! Please search on the
 
 ## Current behavior
 
-<!--- If describing a bug, tell us what happens instead of the expected behavior -->
+<!--- If describing a bug, tell us what happens instead of the expected
+behavior -->
 
-<!--- If suggesting a change/improvement, explain the difference from current behavior -->
+<!--- If suggesting a change/improvement, explain the difference from current
+behavior -->
 
 ## Possible solution
 
@@ -23,7 +25,8 @@ Your issue may already be reported! Please search on the
 
 <!--- How has this issue affected you? What are you trying to accomplish? -->
 
-<!--- Providing context helps us come up with a solution that is most useful in the real world -->
+<!--- Providing context helps us come up with a solution that is most useful in
+the real world -->
 
 ## Steps to reproduce (FOR BUGS)
 
@@ -35,7 +38,8 @@ Your issue may already be reported! Please search on the
 
 ## Your environment (FOR BUGS)
 
-<!--- Include as many relevant details about the environment you experienced the bug in -->
+<!--- Include as many relevant details about the environment you experienced the
+bug in -->
 
 - Version used:
 - Browser Name and version:
