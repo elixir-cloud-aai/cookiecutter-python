@@ -16,6 +16,11 @@ repos:
       - id: mixed-line-ending
         args: [--fix=auto]
       - id: trailing-whitespace
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
+    hooks:
+    - id: markdownlint
+      args: ["--fix"]
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.17
     hooks:
@@ -29,11 +34,10 @@ repos:
     rev: v1.35.1
     hooks:
       - id: yamllint
-        exclude: ^deployment/charts
   - repo: https://github.com/pappasam/toml-sort
     rev: v0.23.1
     hooks:
       - id: toml-sort-fix
         args: [--in-place, --all, --trailing-comma-inline-array]
-        exclude: poetry\.lock
+        exclude: poetry.lock
 ...
