@@ -1,9 +1,6 @@
 ######### User-defined project-specific ignore patterns.              #########
 ######### Add your custom ignore patterns HERE.                       #########
 
-# Ignore default generated template
-python-cookiecutter/*
-
 ######### End of user-defined project-specific ignore patterns.       #########
 
 ######## This section contains auto-generated ignore patterns for     #########
