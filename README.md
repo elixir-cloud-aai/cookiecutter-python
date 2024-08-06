@@ -166,7 +166,7 @@ settings:
     > repository that you want to set up (you may need to "Resync") and hit the
     > "Configure" button. The token should show up in the "Coverage" tab.
 
-- `AUTO_UPDATE_GITHUB_TOKEN`: GitHub token with permissions to write to the
+- `GITHUB_TOKEN`: GitHub token with permissions to write to the
     repository.
 
     > Since Jan 2022, registries/organisations must explicitly grant the authority
