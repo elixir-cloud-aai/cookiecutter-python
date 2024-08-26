@@ -1,7 +1,7 @@
 [![Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://bandit.readthedocs.io/en/latest/)
 [![codecov](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }}/branch/main/graph/badge.svg)](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }})
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)][code-of-conduct]
-[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_name_underscored }}/badge/?version=latest)](https://{{ cookiecutter.project_name_underscored }}.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_name_dashed }}/badge/?version=latest)](https://{{ cookiecutter.project_name_dashed }}.readthedocs.io/en/latest/?badge=latest)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Python {{ cookiecutter.python_version }}](https://img.shields.io/badge/python-{{ cookiecutter.python_version }}-blue.svg)](https://www.python.org/)
 [![GitHub contributors](https://img.shields.io/github/contributors/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }})](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }}/graphs/contributors)
