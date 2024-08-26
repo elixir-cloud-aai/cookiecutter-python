@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import shutil
 
-project_slug = '{{cookiecutter.project_slug}}'
+project_slug = '{{cookiecutter.project_name_underscored}}'
 path_to_workflows = Path.cwd() / '.github' / 'workflows'
 
 create_main_file = '{{cookiecutter.add_script}}' == 'y'

@@ -6,6 +6,6 @@ from pathlib import Path
 def test_init_file_exists():
     """Check if the __init__.py file exists."""
     path_to_init_file = (
-        Path(__file__).parents[2] / "{{ cookiecutter.project_slug }}" / "__init__.py"
+        Path(__file__).parents[2] / "{{ cookiecutter.project_name_underscored }}" / "__init__.py"
     )
     assert path_to_init_file.exists(), f"File {path_to_init_file} does not exist."
