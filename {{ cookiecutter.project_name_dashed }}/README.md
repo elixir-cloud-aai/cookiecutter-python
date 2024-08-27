@@ -1,10 +1,10 @@
 [![Bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://bandit.readthedocs.io/en/latest/)
-[![codecov](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/branch/main/graph/badge.svg)](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }})
+[![codecov](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }}/branch/main/graph/badge.svg)](https://codecov.io/gh/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }})
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)][code-of-conduct]
-[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug }}/badge/?version=latest)](https://{{ cookiecutter.project_slug }}.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_name_dashed }}/badge/?version=latest)](https://{{ cookiecutter.project_name_dashed }}.readthedocs.io/en/latest/?badge=latest)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Python {{ cookiecutter.python_version }}](https://img.shields.io/badge/python-{{ cookiecutter.python_version }}-blue.svg)](https://www.python.org/)
-[![GitHub contributors](https://img.shields.io/github/contributors/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }})](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }})](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }}/graphs/contributors)
 [![Ruff](https://img.shields.io/badge/linter%20&%20formatter-ruff-000000.svg)](https://docs.astral.sh/ruff/)
 [![Safety](https://img.shields.io/badge/security-safety-orange.svg)](https://safetycli.com/product/safety-cli)
 
@@ -171,7 +171,8 @@ To get in touch with us, please use one of the following routes:
 [elixir-compute]: https://elixir-europe.org/platforms/compute
 [email]: mailto:cloud-service@elixir-europe.org
 [ga4gh]: https://ga4gh.org/
-[issue-tracker]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/issues
+
+[issue-tracker]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }}/issues
 [license]: LICENSE
 [logo-elixir]: images/logo-elixir.svg
 [logo-elixir-cloud-aai]: images/logo-elixir-cloud-aai.svg

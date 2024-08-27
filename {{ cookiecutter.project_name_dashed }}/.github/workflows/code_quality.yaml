@@ -80,5 +80,5 @@ jobs:
           poetry-export-options: "--with=code_quality --with=types"
 
       - name: Check types
-        run: poetry run mypy {{ cookiecutter.project_slug}}/
+        run: poetry run mypy {{ cookiecutter.project_name_underscored}}/
 ...

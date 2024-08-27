@@ -2,9 +2,9 @@ import re
 import sys
 
 MODULE_REGEX = r'^[_a-zA-Z][_a-zA-Z0-9]+$'
-MODULE_NAME = '{{ cookiecutter.project_slug }}'
+MODULE_NAME = '{{ cookiecutter.project_name_underscored }}'
 PROJECT_REGEX = r'^[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*$'
-PROJECT_NAME = '{{ cookiecutter.project_name }}'
+PROJECT_NAME = '{{ cookiecutter.project_name_dashed }}'
 
 if not re.match(MODULE_REGEX, MODULE_NAME):
   print(

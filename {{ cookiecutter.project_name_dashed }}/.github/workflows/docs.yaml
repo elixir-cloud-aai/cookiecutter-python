@@ -29,7 +29,7 @@ jobs:
         run: |
           poetry run sphinx-apidoc  \
             -o /tmp/docs/source/pages \
-            {{ cookiecutter.project_slug }}/
+            {{ cookiecutter.project_name_underscored }}/
 
       - name: Compare current docs with latest docs
         id: check_docs_diff
