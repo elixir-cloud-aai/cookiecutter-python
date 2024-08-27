@@ -25,11 +25,11 @@ help:
 
 	@echo "Environment Management --------------------------------------------------------"
 	@echo "  \033[1m\033[35mclean-venv\033[0m \033[37m(cv)\033[0m: \033[36mRemove virtual environment.\033[0m"
-	@echo "  \033[1m\033[35minstall\033[0m \033[37m(i)\033[0m: \033[36mInstall dependencies and {{ cookiecutter.project_name }}.\033[0m"
+	@echo "  \033[1m\033[35minstall\033[0m \033[37m(i)\033[0m: \033[36mInstall app and dependencies.\033[0m"
 	@echo "  \033[1m\033[35mvenv\033[0m \033[37m(v)\033[0m: \033[36mCreate virtual environment.\033[0m\n"
 
 	@echo "Miscellaneous -----------------------------------------------------------------"
-	@echo "  \033[1m\033[35mupdate\033[0m \033[37m(u)\033[0m: \033[36mUpdate the template.\033[0m\n"
+	@echo "  \033[1m\033[35mupdate\033[0m \033[37m(u)\033[0m: \033[36mUpdatetemplate.\033[0m\n"
 
 	@echo "Testing -----------------------------------------------------------------------"
 	@echo "  \033[1m\033[35mtest\033[0m \033[37m(t)\033[0m: \033[36mRun all tests.\033[0m\n"
@@ -72,7 +72,7 @@ fl: format-lint
 
 .PHONY: install
 install:
-	@echo "\nInstalling dependencies and with this package +++++++++++++++++++++++++++++++++\n"
+	@echo "\nInstalling this package its dependencies +++++++++++++++++++++++++++++++++\n"
 	@poetry install --with=code_quality,docs,misc,test,types,vulnerability
 
 .PHONY: i
