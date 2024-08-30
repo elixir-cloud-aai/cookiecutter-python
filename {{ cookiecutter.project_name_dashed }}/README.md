@@ -171,7 +171,6 @@ To get in touch with us, please use one of the following routes:
 [elixir-compute]: https://elixir-europe.org/platforms/compute
 [email]: mailto:cloud-service@elixir-europe.org
 [ga4gh]: https://ga4gh.org/
-
 [issue-tracker]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name_dashed }}/issues
 [license]: LICENSE
 [logo-elixir]: images/logo-elixir.svg
