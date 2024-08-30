@@ -1,1 +1,1 @@
-"""Main package for {{ cookiecutter.project_name_underscored }}"""
+"""Main package for {{ cookiecutter.project_name_underscored }}."""
