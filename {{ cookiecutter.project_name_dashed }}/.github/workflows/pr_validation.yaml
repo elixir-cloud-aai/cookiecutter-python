@@ -10,7 +10,6 @@ jobs:
   detect-unresolved-conflicts:
     name: Detect unresolved merge conflicts
     runs-on: ubuntu-latest
-    needs: semantic_pr
     steps:
       - uses: actions/checkout@v3
       - name: List files with merge conflict markers
