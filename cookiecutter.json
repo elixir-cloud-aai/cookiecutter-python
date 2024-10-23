@@ -19,5 +19,5 @@
     "add_script": "y",
     "year": "2024",
     "add_pypi_release_ci": "y",
-    "docker_image": "y"
+    "add_docker_image": "y"
 }
