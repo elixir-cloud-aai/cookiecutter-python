@@ -36,7 +36,7 @@ RUN poetry config virtualenvs.create false \
 COPY . /app/
 
 ###################################################
-#   Stage 3: Install wheel and create user        #
+#   Stage 3: Create user and run                  #
 ###################################################
 FROM python:{{ cookiecutter.python_version }}-slim
 
