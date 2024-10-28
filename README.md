@@ -10,7 +10,7 @@ including configurations for various project settings.
 
 - [Installation](#installation)
   - [Don't wanna use Cruft?](#dont-wanna-use-cruft)
-  - [Extra dependency](#extra-dependency)
+  - [Extra dependencies](#extra-dependencies)
 - [Configurations](#configurations)
   - [Package manager - Poetry](#package-manager---poetry)
   - [Linters and formatters - Ruff](#linters-and-formatters---ruff)
