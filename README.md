@@ -8,9 +8,9 @@ including configurations for various project settings.
 
 ## Table of Contents
 
+- [Introduction](#introduction)
 - [Installation](#installation)
-  - [Don't wanna use Cruft?](#dont-wanna-use-cruft)
-  - [Extra dependencies](#extra-dependencies)
+- [Usage](#usage)
 - [Configurations](#configurations)
   - [Package manager - Poetry](#package-manager---poetry)
   - [Linters and formatters - Ruff](#linters-and-formatters---ruff)
@@ -26,7 +26,7 @@ including configurations for various project settings.
 - [License](#license)
 - [Contact](#contact)
 
-## Installation
+## Usage
 
 1. **Install Cruft** (if you haven't already):
 
@@ -81,14 +81,6 @@ cookiecutter gh:elixir-cloud-aai/cookiecutter-python
 > **Note**: If you're using just `cookiecutter`, manually remove
 > `update-template` job from `update.yaml` github action workflow file as
 > `cookiecutter` doesn't support autosync like Cruft.
-
-### Extra dependencies
-
-Some checks and configuration might require additional dependencies.
-While we try to keep the template as minimal as possible and have a fallback
-option to use the default configuration, we recommend installing the following:
-
-- Requests: `pip install requests`
 
 ## Configurations
 

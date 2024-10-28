@@ -1,6 +1,7 @@
-import requests
+import json
 import re
 import sys
+import urllib.request
 
 MODULE_REGEX = r'^[_a-zA-Z][_a-zA-Z0-9]+$'
 MODULE_NAME = '{{ cookiecutter.project_name_underscored }}'
@@ -9,26 +10,34 @@ PROJECT_NAME = '{{ cookiecutter.project_name_dashed }}'
 PYTHON_VERSION = '{{ cookiecutter.python_version }}'
 
 
+def fetch_versions_manifest() -> list:
+  """Fetches the versions manifest from GitHub using urllib.
+  
+  Returns:
+    list: A list of dictionaries with Python versions, or 
+    an empty list if an error occurs.
+  """
+  manifest_url = "https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json"
+  
+  try:
+    with urllib.request.urlopen(manifest_url) as response:
+      data = response.read()
+      return json.loads(data)
+  except Exception as e:
+    print(f"Error fetching the versions manifest: {e}")
+    return []
+  
 def valid_python_version() -> bool:
-  """Check if the selected Python version is available.
+  """Check if the selected Python version is available in GitHub Actions Python versions.
   
   Returns:
     bool: True if the Python version is available, False otherwise.
   """
-  # URL for GitHub Actions Python versions manifest
-  manifest_url = "https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json"
+  data = fetch_versions_manifest()
+
+  available_versions = {item["version"] for item in data}
   
-  try:
-    response = requests.get(manifest_url)
-    response.raise_for_status()
-    data = response.json()  
-
-    available_versions = {item["version"] for item in data}
-
-    return PYTHON_VERSION in available_versions
-  except requests.RequestException as e:
-      print(f"Error fetching the versions manifest: {e}")
-      return False
+  return PYTHON_VERSION in available_versions
 
 if not re.match(MODULE_REGEX, MODULE_NAME):
   print(
