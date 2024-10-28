@@ -82,14 +82,13 @@ cookiecutter gh:elixir-cloud-aai/cookiecutter-python
 > `update-template` job from `update.yaml` github action workflow file as
 > `cookiecutter` doesn't support autosync like Cruft.
 
-### Extra dependency
+### Extra dependencies
 
 Some checks and configuration might require additional dependencies.
 While we try to keep the template as minimal as possible and have a fallback
 option to use the default configuration, we recommend installing the following:
 
 - Requests: `pip install requests`
-- Beautiful Soup: `pip install beautifulsoup4`
 
 ## Configurations
 
