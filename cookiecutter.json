@@ -17,6 +17,6 @@
     "github_username": "elixir-cloud-aai",
     "python_version": "3.11",
     "add_script": "y",
-    "year": "2024",
+    "year": "{% now 'utc', '%Y' %}",
     "add_pypi_release_ci": "y"
 }
