@@ -8,8 +8,6 @@ including configurations for various project settings.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Configurations](#configurations)
   - [Package manager - Poetry](#package-manager---poetry)
@@ -28,19 +26,19 @@ including configurations for various project settings.
 
 ## Usage
 
-1. **Install Cruft** (if you haven't already):
+1.**Install Cruft** (if you haven't already):
 
 ```sh
 pip install cruft
 ```
 
-2. **Generate a New Project**:
+2.**Generate a new project**:
 
 ```sh
 cruft create https://github.com/elixir-cloud-aai/cookiecutter-python.git
 ```
 
-3. **Commit and push the generated files** (as applicable to your Git workflow)
+3.**Commit and push the generated files** (as applicable to your Git workflow)
 
 Inside the generated project directory:
 
@@ -66,13 +64,13 @@ git push -u origin main
 
 You can also use the `cookiecutter` command directly:
 
-1. **Install cookiecutter** (if you haven't already):
+1.**Install cookiecutter** (if you haven't already):
 
 ```sh
 pip install cookiecutter
 ```
 
-2. **Generate a New Project**:
+2.**Generate a new project**:
 
 ```sh
 cookiecutter gh:elixir-cloud-aai/cookiecutter-python
