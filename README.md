@@ -1,5 +1,5 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)][code-of-conduct]
-[![GitHub contributors](https://img.shields.io/github/contributors/elixir-cloud-aai/cookiecutter-python/)](https://github.com/elixir-cloud-aai/cookiecutter-python/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/elixir-cloud-aai/cookiecutter-python)](https://github.com/elixir-cloud-aai/cookiecutter-python/graphs/contributors)
 
 # Python Cookiecutter Template
 
