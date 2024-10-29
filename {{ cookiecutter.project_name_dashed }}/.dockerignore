@@ -1,0 +1,39 @@
+# Ignore cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ruff_cache/
+
+# Ignore virtual environments
+.venv/
+
+# Ignore version control files and directories
+.git/
+.gitignore
+
+# Ignore CI/CD and deployment-related files
+.github/
+.dockerignore
+.cruft.json
+.pre-commit-config.yaml
+.safety-policy.yml
+.readthedocs.yaml
+.yamllint.yaml
+.tool-versions
+
+# Ignore markdown files (e.g., documentation)
+*.md
+
+# Ignore environment files (for local development)
+.env
+
+# Ignore deployment files
+deployment/
+
+# Ignore documentation and images
+docs/
+images/
+
+# Ignore test files and directories
+tests/
