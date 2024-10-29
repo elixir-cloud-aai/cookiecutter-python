@@ -32,7 +32,7 @@ including configurations for various project settings.
 pip install cruft
 ```
 
-2.**Generate a New Project**:
+2.**Generate a new project**:
 
 ```sh
 cruft create https://github.com/elixir-cloud-aai/cookiecutter-python.git
@@ -70,7 +70,7 @@ You can also use the `cookiecutter` command directly:
 pip install cookiecutter
 ```
 
-2.**Generate a New Project**:
+2.**Generate a new project**:
 
 ```sh
 cookiecutter gh:elixir-cloud-aai/cookiecutter-python
