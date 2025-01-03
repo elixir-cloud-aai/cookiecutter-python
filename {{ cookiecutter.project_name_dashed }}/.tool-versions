@@ -14,6 +14,10 @@
 # Ensure that the INSTALL commands are up-to-date for automated setups.
 # ===================================================================
 
+# INSTALL: asdf plugin add poetry; asdf install poetry 1.8.5
+poetry 1.8.5
+
 # INSTALL: asdf plugin add python; asdf install python {{ cookiecutter.python_version }}
 # DEBUG(build): Refer to https://github.com/asdf-community/asdf-python/issues/119#issuecomment-1146655005
 python {{ cookiecutter.python_version }}
+
