@@ -18,5 +18,25 @@
     "python_version": "3.13.0",
     "add_script": "y",
     "year": "{% now 'utc', '%Y' %}",
-    "add_pypi_release_ci": "y"
+    "add_pypi_release_ci": "y",
+    "__prompts__": {
+        "author_name": "Full name or organization (used in license and pyproject.toml)",
+        "author_email": "Contact email for project issues and PyPI publishing",
+        "development_status": "Project phase according to PEP 301 (1-7)",
+        "short_description": "Project summary (max 100 chars, used in PyPI and GitHub)",
+        "project_name": "Name of the project name mainly used in README title",
+        "project_name_underscored": "Python import name, recommended to be project name but lowercase, underscored and no spaces",
+        "project_name_dashed": "Distribution name (lowercase, hyphens, no spaces, for PyPI)",
+        "github_username": "GitHub username/org (for repo URL and package metadata)",
+        "python_version": "Minimum Python version (format: X.Y.Z, default: 3.13.0)",
+        "add_script": "Include CLI tool? [y/n]",
+        "add_pypi_release_ci": "Enable automated PyPI publishing via GitHub Actions? [y/n]",
+        "__validation__": {
+            "author_email": "Must be valid email format",
+            "development_status": "Integer 1-7",
+            "project_name_underscored": "^[a-z][a-z0-9_]*$",
+            "project_name_dashed": "^[a-z][a-z0-9-]*$",
+            "python_version": "^\\d+\\.\\d+\\.\\d+$"
+        }
+    }
 }
