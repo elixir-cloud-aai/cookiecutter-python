@@ -2,7 +2,7 @@
 name: 🪲 Bug Report
 description: Report a bug
 title: "[Bug 🪲]: "
-labels: ["bug", "triage"]
+labels: ["bug"]
 body:
   - type: input
     id: description
