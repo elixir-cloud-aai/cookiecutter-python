@@ -1,7 +1,7 @@
 ---
 name: 🔧 General Issue
 description: Create a general issue report
-labels: ["triage"]
+labels: ["triage 🔧"]
 body:
   - type: dropdown
     id: type
@@ -66,9 +66,7 @@ body:
     attributes:
       label: Pre-submission Checklist
       options:
-        - label: I have searched existing issues
-          required: true
-        - label: I have read the documentation
+        - label: I have gone through the documentation
           required: true
         - label: This issue hasn't been reported before
           required: true

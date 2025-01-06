@@ -1,7 +1,7 @@
 ---
 name: ⚡ Performance Issue
 description: Report performance problems
-title: "[Perf]: "
+title: "[Perf ⚡]: "
 labels: ["performance"]
 body:
   - type: textarea

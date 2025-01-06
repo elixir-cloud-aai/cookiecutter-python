@@ -3,8 +3,8 @@ blank_issues_enabled: false
 contact_links:
   - name: 📚 Documentation
     url: https://readthedocs.org/projects/{{ cookiecutter.project_name_dashed }}/badge/?version=latest
-    about: Check our documentation before creating an issue
-  - name: 📣 Slack
-    url: https://join.slack.com/t/elixir-cloud/shared_invite/enQtNzA3NTQ5Mzg2NjQ3LTZjZGI1OGQ5ZTRiOTRkY2ExMGUxNmQyODAxMDdjM2EyZDQ1YWM0ZGFjOTJhNzg5NjE0YmJiZTZhZDVhOWE4MWM
+    about: Please check our documentation before creating an issue
+  - name: Discussions
+    url: https://github.com/elixir-cloud-aai/elixir-cloud-aai/discussions
     about: Reach out to the community for help
 ...

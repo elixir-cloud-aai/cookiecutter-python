@@ -1,7 +1,7 @@
 ---
 name: 📦 Dependency Issue
 description: Report dependency conflicts or version issues
-title: "[Deps]: "
+title: "[Deps 📦]: "
 labels: ["dependencies"]
 body:
   - type: textarea
