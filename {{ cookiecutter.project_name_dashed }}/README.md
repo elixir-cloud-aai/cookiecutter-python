@@ -17,6 +17,9 @@
 - [Basic Usage](#basic-usage)
 - [Installation](#installation)
 - [Development](#development)
+  - [Makefile](#makefile)
+  - [Environment reproducibility](#environment-reproducibility)
+    - [Devcontainers](#devcontainers)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
@@ -28,6 +31,8 @@
 ## Installation
 
 ## Development
+
+### Makefile
 
 For ease of use, certain scripts have been abbreviated in `Makefile`, make sure
 that you have installed the dependencies before running the commands.
@@ -119,6 +124,14 @@ make u
 > **Note**: This is not the complete list of commands, run `make` to find out if
 > more have been added.
 
+### Environment reproducibility
+
+#### Devcontainers
+
+[Devcontainer][devcontainer] can be used to configure a development environment.
+Install dev container extension in supported IDEs like Visual Studio Code and run
+the project in a containerized environment.
+
 ## Contributing
 
 This project is a community effort and lives off _your_ contributions, be it in
@@ -166,6 +179,7 @@ To get in touch with us, please use one of the following routes:
 [badge-license-url]: http://www.apache.org/licenses/LICENSE-2.0
 [code-of-conduct]: https://elixir-cloud-aai.github.io/about/code-of-conduct/
 [contributing]: https://elixir-cloud-aai.github.io/guides/guide-contributor/
+[devcontainer]: https://code.visualstudio.com/docs/devcontainers/containers
 [elixir]: https://elixir-europe.org/
 [elixir-cloud-aai]: https://elixir-cloud.dcc.sib.swiss/
 [elixir-compute]: https://elixir-europe.org/platforms/compute
