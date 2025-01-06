@@ -16,7 +16,6 @@ body:
         - Other
     validations:
       required: true
-
   - type: textarea
     id: description
     attributes:
@@ -27,7 +26,6 @@ body:
         For features: What need are you trying to address?
     validations:
       required: true
-
   - type: textarea
     id: reproduction
     attributes:
@@ -39,7 +37,6 @@ body:
         3. See error
     validations:
       required: false
-
   - type: textarea
     id: solution
     attributes:
@@ -48,7 +45,6 @@ body:
       placeholder: I think this could be solved by...
     validations:
       required: false
-
   - type: textarea
     id: context
     attributes:
@@ -60,7 +56,6 @@ body:
         - Links to documentation
     validations:
       required: false
-
   - type: checkboxes
     id: checks
     attributes:
