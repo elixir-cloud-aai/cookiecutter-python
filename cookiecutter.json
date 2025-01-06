@@ -15,7 +15,7 @@
     "project_name_dashed": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "project_name_underscored": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "github_username": "elixir-cloud-aai",
-    "python_version": "3.11",
+    "python_version": "3.13.0",
     "add_script": "y",
     "year": "{% now 'utc', '%Y' %}",
     "add_pypi_release_ci": "y"

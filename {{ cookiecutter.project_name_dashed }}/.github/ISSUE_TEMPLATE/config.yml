@@ -1,0 +1,12 @@
+---
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    # yamllint disable rule:line-length
+    url: https://readthedocs.org/projects/{{ cookiecutter.project_name_dashed }}/badge/?version=latest
+    # yamllint enable rule:line-length
+    about: Please check our documentation before creating an issue
+  - name: Discussions
+    url: https://github.com/elixir-cloud-aai/elixir-cloud-aai/discussions
+    about: Reach out to the community for help
+...
