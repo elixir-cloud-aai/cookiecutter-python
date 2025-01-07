@@ -17,6 +17,7 @@
         "ms-python.mypy-type-checker",
         "ms-python.python",
         "redhat.vscode-yaml",
+        "streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries",
         "tamasfe.even-better-toml",
         "tekumara.typos-vscode"
       ],
