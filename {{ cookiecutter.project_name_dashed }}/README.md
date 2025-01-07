@@ -126,11 +126,21 @@ make u
 
 ### Environment reproducibility
 
-#### Devcontainers
+#### Dev containers
 
-[Devcontainer][devcontainer] can be used to configure a development environment.
+[Dev container][devcontainer] can be used to configure a development environment.
 Install dev container extension in supported IDEs like Visual Studio Code and run
 the project in a containerized environment.
+
+For VS code you can do the following to open the project in a devcontainer:
+
+- Open extension market place (`<ctrl> + <shift> + x`), search for
+  [Dev container][devcontainer-download] (official one from microsoft, should
+  be the first one).
+
+- Reload VS code (or reopen), it should prompt you to open the project in
+  Dev container. If not press `<ctrl> + <shift> + p` (ie open command panel)
+  and search for Dev container: Open Workspace in container and press enter.
 
 ## Contributing
 
@@ -180,6 +190,7 @@ To get in touch with us, please use one of the following routes:
 [code-of-conduct]: https://elixir-cloud-aai.github.io/about/code-of-conduct/
 [contributing]: https://elixir-cloud-aai.github.io/guides/guide-contributor/
 [devcontainer]: https://code.visualstudio.com/docs/devcontainers/containers
+[devcontainer-download]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 [elixir]: https://elixir-europe.org/
 [elixir-cloud-aai]: https://elixir-cloud.dcc.sib.swiss/
 [elixir-compute]: https://elixir-europe.org/platforms/compute
