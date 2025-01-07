@@ -30,9 +30,9 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM}
     && git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM}/plugins/zsh-autocomplete
 
 # Configure zsh
-COPY zshrc.override /tmp
-RUN cat /tmp/zshrc.override >> ~/.zshrc \
-    && rm /tmp/zshrc.overrid \
+COPY .devcontainer/override.zshrc /tmp/override.zshrc
+RUN cat /tmp/override.zshrc >> ~/.zshrc \
+    && rm /tmp/override.zshrc \
     && ~/.zshrc
 
 # Make zsh the default shell
