@@ -20,7 +20,7 @@
   - [Makefile](#makefile)
   - [Environment reproducibility](#environment-reproducibility)
     - [Dev containers](#dev-containers)
-    - [envrc][#envrc]
+    - [envrc](#envrc)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
