@@ -18,5 +18,18 @@
     "python_version": "3.13.0",
     "add_script": "y",
     "year": "{% now 'utc', '%Y' %}",
-    "add_pypi_release_ci": "y"
+    "add_pypi_release_ci": "y",
+    "__prompts__": {
+        "author_name": "Full name or organization (used in license and pyproject.toml)",
+        "author_email": "Email address for project contact (used for PyPI publishing and issue reporting)",
+        "development_status": "Project development phase <integer 1-7> (used in PEP 301 classifier)",
+        "short_description": "Project summary (used in PyPI and GitHub)",
+        "project_name": "Main project title (used in README header)",
+        "project_name_underscored": "Python import name <lowercase, underscores, no spaces> (used in import statements)",
+        "project_name_dashed": "Distribution name <lowercase, hyphens, no spaces> (used on PyPI)",
+        "github_username": "GitHub account name (used in repo URL and package metadata)",
+        "python_version": "Minimum Python version <X.Y.Z format> (used in dependency specification)",
+        "add_script": "CLI tool inclusion flag <y/n> (used in build configuration)",
+        "add_pypi_release_ci": "PyPI publishing automation flag <y/n>"
+    }
 }
