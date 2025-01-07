@@ -16,7 +16,7 @@
         "tamasfe.even-better-toml",
         "redhat.vscode-yaml",
         "davidanson.vscode-markdownlint",
-        "streetsidesoftware.code-spell-checker"
+        "tekumara.typos-vscode"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/workspaces/{{ cookiecutter.project_name_dashed }}/bin/python",
@@ -47,7 +47,8 @@
         },
         "[markdown]": {
           "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-          "editor.wordWrap": "on"
+          "editor.wordWrap": "on",
+          "editor.rulers": [80]
         },
         "[yaml]": {
           "editor.defaultFormatter": "redhat.vscode-yaml",

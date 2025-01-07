@@ -30,11 +30,10 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM}
     && git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM}/plugins/zsh-autocomplete
 
 # Configure zsh
-RUN sed -i -e '$aexport ZSH="/root/.oh-my-zsh"' \
-       -e '$aplugins=(git docker zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete)' \
-       -e '$asource $ZSH/oh-my-zsh.sh' \
-       -e '$asource /workspaces/{{ cookiecutter.project_name_dashed }}/.venv/bin/activate 2>/dev/null || true' \
-       ~/.zshrc
+COPY zshrc.override /tmp
+RUN cat /tmp/zshrc.override >> ~/.zshrc \
+    && rm /tmp/zshrc.overrid \
+    && ~/.zshrc
 
 # Make zsh the default shell
 RUN chsh -s $(which zsh)
