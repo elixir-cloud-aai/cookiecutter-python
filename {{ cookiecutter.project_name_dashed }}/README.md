@@ -150,7 +150,7 @@ container-based development environment for you:
 The development environment will now be installed and activated.
 
 > **Note:** The initial process will take some time, as multiple container images
-> need to be pulled and dependencies installed. Howwever, once set up, activating
+> need to be pulled and dependencies installed. However, once set up, activating
 > the environment is fast.
 
 ## Contributing
