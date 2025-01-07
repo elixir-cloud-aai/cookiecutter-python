@@ -126,21 +126,30 @@ make u
 
 ### Environment reproducibility
 
-#### Dev containers
+Our project supports [Dev Containers][devcontainers] for an easy and reproducible
+setup of development environments via containers. To make use of it, install the
+Dev Containers extension in one of the supported editors/IDEs.
 
-[Dev container][devcontainer] can be used to configure a development environment.
-Install dev container extension in supported IDEs like Visual Studio Code and run
-the project in a containerized environment.
+For example, for VS Code, do the following to have Dev Containers provision a
+container-based development environment for you:
 
-For VS code you can do the following to open the project in a devcontainer:
+- Make sure [Docker is installed][docker-install] on your machine.
+- To install the official Microsoft extension, open the Extensions view
+  (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>x</kbd>), enter
+  `ms-vscode-remote.remote-containers` in the query box, press <kbd>Enter</kbd>,
+  select the "Dev Containers" extension and hit the "Install" button;
+  alternatively, use [this direct link][devcontainers-download]
+- After reloading VS Code and opening the project folder, you should be prompted
+  by the Dev Containers extension to open the workspace in a container. If not,
+  press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>g</kbd> to open the command
+  panel, search for "Dev Containers: Open Workspace in Container..." and hit
+  <kbd>Enter</kbd>
 
-- Open extension market place (`<ctrl> + <shift> + x`), search for
-  [Dev container][devcontainer-download] (official one from microsoft, should
-  be the first one).
+The development environment will now be installed and activated.
 
-- Reload VS code (or reopen), it should prompt you to open the project in
-  Dev container. If not press `<ctrl> + <shift> + p` (ie open command panel)
-  and search for Dev container: Open Workspace in container and press enter.
+> Note that the initial process will take some time, as multiple container images
+> need to be pulled and dependencies installed. Howwever, once set up, activating
+> the environment is fast.
 
 ## Contributing
 
@@ -189,8 +198,9 @@ To get in touch with us, please use one of the following routes:
 [badge-license-url]: http://www.apache.org/licenses/LICENSE-2.0
 [code-of-conduct]: https://elixir-cloud-aai.github.io/about/code-of-conduct/
 [contributing]: https://elixir-cloud-aai.github.io/guides/guide-contributor/
-[devcontainer]: https://code.visualstudio.com/docs/devcontainers/containers
-[devcontainer-download]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+[devcontainers]: https://code.visualstudio.com/docs/devcontainers/containers
+[devcontainers-download]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+[docker-install]: https://docs.docker.com/engine/install/
 [elixir]: https://elixir-europe.org/
 [elixir-cloud-aai]: https://elixir-cloud.dcc.sib.swiss/
 [elixir-compute]: https://elixir-europe.org/platforms/compute
