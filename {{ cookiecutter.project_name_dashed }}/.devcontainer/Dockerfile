@@ -3,9 +3,8 @@ FROM python:${PYTHON_VERSION}
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    POETRY_VIRTUALENVS_IN_PROJECT=true \
+    POETRY_VIRTUALENVS_IN_PROJECT=false \
     POETRY_NO_INTERACTION=1 \
-    POETRY_VERSION=1.7.1 \
     ZSH_CUSTOM=/root/.oh-my-zsh/custom
 
 # Install system dependencies
@@ -26,14 +25,11 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 
 # Install zsh plugins
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM}/plugins/zsh-autosuggestions \
-    && git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/fast-syntax-highlighting \
-    && git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM}/plugins/zsh-autocomplete
+    && git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/fast-syntax-highlighting
 
 # Configure zsh
 COPY .devcontainer/override.zshrc /tmp/override.zshrc
-RUN cat /tmp/override.zshrc >> ~/.zshrc \
-    && rm /tmp/override.zshrc \
-    && ~/.zshrc
+RUN cat /tmp/override.zshrc >> ~/.zshrc
 
 # Make zsh the default shell
 RUN chsh -s $(which zsh)
