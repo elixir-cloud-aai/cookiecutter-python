@@ -19,7 +19,7 @@
 - [Development](#development)
   - [Makefile](#makefile)
   - [Environment reproducibility](#environment-reproducibility)
-    - [Devcontainers](#devcontainers)
+    - [Dev containers](#dev-containers)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
@@ -125,6 +125,8 @@ make u
 > more have been added.
 
 ### Environment reproducibility
+
+#### Dev containers
 
 Our project supports [Dev Containers][devcontainers] for an easy and reproducible
 setup of development environments via containers. To make use of it, install the
