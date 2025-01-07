@@ -126,7 +126,7 @@ make u
 
 ### Environment reproducibility
 
-#### Dev containers
+#### Dev Containers
 
 Our project supports [Dev Containers][devcontainers] for an easy and reproducible
 setup of development environments via containers. To make use of it, install the
