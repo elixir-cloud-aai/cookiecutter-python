@@ -98,3 +98,7 @@ select = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.typos.default.extend-words]
+direnv = "direnv"
+envrc = "envrc"

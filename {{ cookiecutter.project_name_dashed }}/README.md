@@ -20,6 +20,7 @@
   - [Makefile](#makefile)
   - [Environment reproducibility](#environment-reproducibility)
     - [Dev containers](#dev-containers)
+    - [envrc][#envrc]
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
@@ -153,6 +154,21 @@ The development environment will now be installed and activated.
 > need to be pulled and dependencies installed. However, once set up, activating
 > the environment is fast.
 
+#### envrc
+
+Our project uses [envrc][direnv] to manage environment variables. You will find
+`.envrc.example` in root of the project and optionally in subdirectories. Please
+create a copy of the file and rename it to `.envrc`. Fill in the confidential
+environment variable in the files if needed and run the following command to
+activate the environment variables:
+
+```sh
+direnv allow
+```
+
+> **Note**: Make sure to have `direnv` installed on your system. Follow the
+> instructions on the [official website][direnv] to install it.
+
 ## Contributing
 
 This project is a community effort and lives off _your_ contributions, be it in
@@ -202,6 +218,7 @@ To get in touch with us, please use one of the following routes:
 [contributing]: https://elixir-cloud-aai.github.io/guides/guide-contributor/
 [devcontainers]: https://code.visualstudio.com/docs/devcontainers/containers
 [devcontainers-download]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+[direnv]: https://direnv.net/
 [docker-install]: https://docs.docker.com/engine/install/
 [elixir]: https://elixir-europe.org/
 [elixir-cloud-aai]: https://elixir-cloud.dcc.sib.swiss/
