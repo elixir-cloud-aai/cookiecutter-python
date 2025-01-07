@@ -56,13 +56,10 @@
         "[toml]": {
           "editor.defaultFormatter": "tamasfe.even-better-toml"
         },
-        "ruff.lint.args": ["--config=pyproject.toml"],
-        "ruff.format.args": ["--config=pyproject.toml"],
-        "mypy.configFile": "pyproject.toml",
         "mypy.runUsingActiveInterpreter": true
       }
     }
   },
-  "postCreateCommand": "make install",
+  "postCreateCommand": "make v && . .venv/bin/activate && make install",
   "remoteUser": "root"
 }
