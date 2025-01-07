@@ -24,7 +24,7 @@ help:
 	@echo "  \033[1m\033[35mdocs\033[0m \033[37m(d)\033[0m: \033[36mGenerate project documentation.\033[0m\n"
 
 	@echo "Environment Management --------------------------------------------------------"
-	@echo "  \033[1m\033[35masdf-install\033[0m \033[37m(asdfi)\033[0m: \033[36mInstall tools mentioned in .tool-versions.\033[0m"
+	@echo "  \033[1m\033[35masdf-install\033[0m \033[37m(asdfi)\033[0m: \033[36mTry to install tools listed in .tool-versions.\033[0m"
 	@echo "  \033[1m\033[35mclean-venv\033[0m \033[37m(cv)\033[0m: \033[36mRemove virtual environment.\033[0m"
 	@echo "  \033[1m\033[35minstall\033[0m \033[37m(i)\033[0m: \033[36mInstall app and dependencies.\033[0m"
 	@echo "  \033[1m\033[35mvenv\033[0m \033[37m(v)\033[0m: \033[36mCreate virtual environment.\033[0m\n"
@@ -42,11 +42,9 @@ help:
 
 .PHONY: asdf-install
 asdf-install:
-	@echo "\nIntalling environment and tools mentioned in .tool-versions +++++++++++++++++++\n"
-	@grep "# INSTALL:" .tool-versions | sed 's/# INSTALL: //' | while read -r command; do \
-		echo "Running: $$command"; \
-		eval $$command; \
-	done
+	@echo "\nInstalling ASDF Plugins & Tools +++++++++++++++++++++++++++++++++++++++++++++++\n"
+	@cat .tool-versions | cut -d' ' -f1 | grep "^[^\#]" | xargs -I {} asdf plugin add {}
+	@asdf install
 
 .PHONY: asdfi
 asdfi: asdf-install

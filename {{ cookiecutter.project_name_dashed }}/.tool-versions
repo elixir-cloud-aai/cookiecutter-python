@@ -1,23 +1,2 @@
-# =================================================================:
-# This file specifies the tools and environments required for the project.
-# While you may use your own methods to install these dependencies,
-# this file also provides automated instructions for installation.
-#
-# Each dependency entry can include up to three tags, part from normal tags
-#   namely TODO, FIXME, XXX:
-#
-#   - INSTALL: Specifies the exact commands to automate the installation process.
-#              (This tag is mandatory to enable automation through the Makefile.)
-#   - DEBUG(scope): Offers scoped debugging guidance for known issues.
-#                   The scope is specified in parentheses (e.g., "build").
-#
-# Ensure that the INSTALL commands are up-to-date for automated setups.
-# ===================================================================
-
-# INSTALL: asdf plugin add poetry; asdf install poetry 1.8.5
 poetry 1.8.5
-
-# INSTALL: asdf plugin add python; asdf install python {{ cookiecutter.python_version }}
-# DEBUG(build): Refer to https://github.com/asdf-community/asdf-python/issues/119#issuecomment-1146655005
 python {{ cookiecutter.python_version }}
-
