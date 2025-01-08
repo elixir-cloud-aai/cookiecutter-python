@@ -20,7 +20,7 @@
   - [Makefile](#makefile)
   - [Environment reproducibility](#environment-reproducibility)
     - [Dev containers](#dev-containers)
-    - [envrc](#envrc)
+    - [Setting environment variables (direnv)](#setting-environment-variables-direnv)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
@@ -154,20 +154,36 @@ The development environment will now be installed and activated.
 > need to be pulled and dependencies installed. However, once set up, activating
 > the environment is fast.
 
-#### envrc
+#### Setting environment variables (direnv)
 
-Our project uses [envrc][direnv] to manage environment variables. You will find
-`.envrc.example` in root of the project and optionally in subdirectories. Please
-create a copy of the file and rename it to `.envrc`. Fill in the confidential
-environment variable in the files if needed and run the following command to
-activate the environment variables:
+Our project uses [.envrc files][direnv] to manage environment variables.
+Wherever such a file is required across the project tree, you will find a
+`.envrc.template` file that contains the necessary variables and helps you
+create your own personal copy of each file. You can find the locations of all
+`.envrc.template` files by executing `find . -type f -name \.envrc\.template`
+in the root directory. For each, create a copy named `.envrc` in the same
+directory, open it in a text editor and replace the template/example values with
+your own personal and potentially confidential values.
+
+**Warning:** Be careful not to leak sensitive information! In particular,
+**never** add your secrets to the `.envrc.template` files directly, as these are
+committed to version control and will be visible to anyone with access to the
+repository. Always create an `.envrc` copy first (capitalization and punctuation
+matter!), as these (along with `.env` files) are ignored from version control.
+
+Once you have filled in all of your personal information, you can have the
+`direnv` tool manage setting your environment variables automatically (depending
+on the directory you are currently in and the particular `.envrc` file defined
+for that directory) by executing the following command:
 
 ```sh
 direnv allow
 ```
 
-> **Note**: Make sure to have `direnv` installed on your system. Follow the
-> instructions on the [official website][direnv] to install it.
+> **Note**: Make sure you have `direnv` installed on your system. Follow the
+> instructions on the [official website][direnv] to install it. If you are using
+> [Dev Containers](#dev-containers), your development environment will have
+> `direnv` available and ready to use.
 
 ## Contributing
 
