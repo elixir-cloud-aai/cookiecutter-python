@@ -87,6 +87,7 @@ quote-style = "double"
 [tool.ruff.lint]
 select = [
   "B", # flake8-bugbear
+  "C90", # mccabe
   "D", # pydocstyle
   "E", # pycodestyle
   "F", # Pyflakes

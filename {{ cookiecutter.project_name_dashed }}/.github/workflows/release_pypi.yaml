@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Harden-Runner
+        uses: step-security/harden-runner@v2.10.2
+
       - name: Set up environment
         uses: ./.github/actions/setup/poetry
         with:
