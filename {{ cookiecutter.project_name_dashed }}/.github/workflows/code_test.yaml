@@ -8,6 +8,8 @@ on:
   pull_request:
     branches:
       - main
+  schedule:
+    - cron: '0 12 * * 1' # Runs every Monday at 12:00 PM UTC
 
 jobs:
   integration-test:
@@ -16,6 +18,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Harden-Runner
+        uses: step-security/harden-runner@v2.10.2
 
       - name: Set up environment
         uses: ./.github/actions/setup/poetry
@@ -47,6 +52,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Harden-Runner
+        uses: step-security/harden-runner@v2.10.2
 
       - name: Set up environment
         uses: ./.github/actions/setup/poetry

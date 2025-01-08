@@ -20,6 +20,7 @@
   - [Makefile](#makefile)
   - [Environment reproducibility](#environment-reproducibility)
     - [Dev containers](#dev-containers)
+    - [Editor config](#editor-config)
     - [Setting environment variables (direnv)](#setting-environment-variables-direnv)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
@@ -154,6 +155,14 @@ The development environment will now be installed and activated.
 > need to be pulled and dependencies installed. However, once set up, activating
 > the environment is fast.
 
+#### Editor Config
+
+To ensure a consistent code style across the project, we include an `.editorconfig`
+file that defines the coding styles for different editors and IDEs. Most modern
+editors support this file format out of the box, but you might need to install a
+plugin for some editors. Please refer to the [EditorConfig website][editor-config].
+
+
 #### Setting environment variables (direnv)
 
 Our project uses [.envrc files][direnv] to manage environment variables.
@@ -236,6 +245,7 @@ To get in touch with us, please use one of the following routes:
 [devcontainers-download]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 [direnv]: https://direnv.net/
 [docker-install]: https://docs.docker.com/engine/install/
+[editor-config]: https://editorconfig.org/
 [elixir]: https://elixir-europe.org/
 [elixir-cloud-aai]: https://elixir-cloud.dcc.sib.swiss/
 [elixir-compute]: https://elixir-europe.org/platforms/compute
