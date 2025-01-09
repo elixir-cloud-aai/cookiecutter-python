@@ -4,6 +4,7 @@ export ZSH="/root/.oh-my-zsh"
 # Plugins
 plugins=(
   asdf # Sets up asdf version manager
+  direnv # Loads .envrc files
   git # Adds git command aliases and useful prompt info
   docker  # Provides docker command completion and aliases
   zsh-autosuggestions # Suggests commands based on history
