@@ -133,17 +133,31 @@ set up your environment quickly.
 
 #### asdf
 
-We recommend using [asdf][asdf] to manage your development environment. Take a
-look at the `.tool-versions` file to see the versions of the tools used in this
-project. Additionally, you can use the make command to install all the required
-tools at once.
+We recommend using [asdf][asdf] to manage your development environment
+efficiently. This tool allows you to handle multiple language versions and tools
+seamlessly. You can install asdf by following the
+[official installation guide][asdf-install]. If you are working within
+[dev containers](#dev-containers), asdf will come pre-installed.
+
+The project includes a `.tool-versions` file, which lists the specific versions
+of tools used. This ensures consistency across environments. To streamline the
+installation process, use the following command to install the required tools 
+defined in the `.tool-versions` file:
 
 ```sh
 make asdfi
 ```
 
-> **Note:** The above command might not install all the tools required, so make
-> sure to install the tools that are not installed manually.
+> **Note:** The `make asdfi` command might not install every tool listed in
+> the `.tool-versions` file. After running the command, verify that all
+> necessary tools are installed. If any tools are missing, install them 
+> manually using asdf.
+
+Example manual installation command:
+
+```sh
+asdf install <tool-name> <version>
+```
 
 #### Dev Containers
 
@@ -216,6 +230,7 @@ To get in touch with us, please use one of the following routes:
 [![logo-elixir]][elixir] [![logo-elixir-cloud-aai]][elixir-cloud-aai]
 
 [asdf]: https://asdf-vm.com/
+[asdf-install]: https://asdf-vm.com/guide/getting-started.html
 [badge-chat-url]: https://join.slack.com/t/elixir-cloud/shared_invite/enQtNzA3NTQ5Mzg2NjQ3LTZjZGI1OGQ5ZTRiOTRkY2ExMGUxNmQyODAxMDdjM2EyZDQ1YWM0ZGFjOTJhNzg5NjE0YmJiZTZhZDVhOWE4MWM
 [badge-license-url]: http://www.apache.org/licenses/LICENSE-2.0
 [code-of-conduct]: https://elixir-cloud-aai.github.io/about/code-of-conduct/
