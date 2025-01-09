@@ -35,19 +35,19 @@ Generally, **PRs are only reviewed when ALL BOXES are ticked off and all
 automated checks pass** (use the comment section below if you believe that
 your PR is ready to be merged even though not all boxes were ticked off). -->
 
-- [] My code follows the [contributing guidelines][contributing-guidelines]
-    and I acknowledge that all my commits will be squashed into a single commit
-    using the PR title as the commit message
-- [] I have performed a self-review of my own code and updated the user-facing
-    documentation to describe any new or changed behavior
-- [] I have commented my code in hard-to-understand areas and provided
-    appropriate documentation ([Google-style Python docstrings][py-doc-google])
-    for all packages/modules/functions/classes/methods or updated existing ones
-- [] I have added type annotations for all function/class/method interfaces
-  or updated existing ones (only for Python, TypeScript, etc.)
-- [] I have added tests that prove my fix is effective or that my feature
+- \[\] My code follows the [contributing guidelines][contributing-guidelines]
+  and I acknowledge that all my commits will be squashed into a single commit
+  using the PR title as the commit message
+- \[\] I have performed a self-review of my own code and updated the user-facing
+  documentation to describe any new or changed behavior
+- \[\] I have commented my code in hard-to-understand areas and provided
+  appropriate documentation ([Google-style Python docstrings][py-doc-google])
+  for all packages/modules/functions/classes/methods or updated existing ones
+- \[\] I have added type annotations for all function/class/method interfaces or
+  updated existing ones (only for Python, TypeScript, etc.)
+- \[\] I have added tests that prove my fix is effective or that my feature
   works
-- [] I have not reduced the existing code coverage
+- \[\] I have not reduced the existing code coverage
 
 #### Comments
 
