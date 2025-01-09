@@ -42,6 +42,9 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
     && git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM}/plugins/zsh-autosuggestions \
     && git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/fast-syntax-highlighting
 
+# Install direnv
+RUN curl -sfL https://direnv.net/install.sh | bash
+
 COPY .devcontainer/override.zshrc /tmp/override.zshrc
 RUN cat /tmp/override.zshrc >> ~/.zshrc \
     && chsh -s $(which zsh)

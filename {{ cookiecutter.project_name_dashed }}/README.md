@@ -21,6 +21,7 @@
   - [Environment reproducibility](#environment-reproducibility)
     - [Dev containers](#dev-containers)
     - [Editor config](#editor-config)
+    - [Setting environment variables (direnv)](#setting-environment-variables-direnv)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Versioning](#versioning)
@@ -161,6 +162,38 @@ file that defines the coding styles for different editors and IDEs. Most modern
 editors support this file format out of the box, but you might need to install a
 plugin for some editors. Please refer to the [EditorConfig website][editor-config].
 
+
+#### Setting environment variables (direnv)
+
+Our project uses [.envrc files][direnv] to manage environment variables.
+Wherever such a file is required across the project tree, you will find a
+`.envrc.template` file that contains the necessary variables and helps you
+create your own personal copy of each file. You can find the locations of all
+`.envrc.template` files by executing `find . -type f -name \.envrc\.template`
+in the root directory. For each, create a copy named `.envrc` in the same
+directory, open it in a text editor and replace the template/example values with
+your own personal and potentially confidential values.
+
+**Warning:** Be careful not to leak sensitive information! In particular,
+**never** add your secrets to the `.envrc.template` files directly, as these are
+committed to version control and will be visible to anyone with access to the
+repository. Always create an `.envrc` copy first (capitalization and punctuation
+matter!), as these (along with `.env` files) are ignored from version control.
+
+Once you have filled in all of your personal information, you can have the
+`direnv` tool manage setting your environment variables automatically (depending
+on the directory you are currently in and the particular `.envrc` file defined
+for that directory) by executing the following command:
+
+```sh
+direnv allow
+```
+
+> **Note**: Make sure you have `direnv` installed on your system. Follow the
+> instructions on the [official website][direnv] to install it. If you are using
+> [Dev Containers](#dev-containers), your development environment will have
+> `direnv` available and ready to use.
+
 ## Contributing
 
 This project is a community effort and lives off _your_ contributions, be it in
@@ -210,6 +243,7 @@ To get in touch with us, please use one of the following routes:
 [contributing]: https://elixir-cloud-aai.github.io/guides/guide-contributor/
 [devcontainers]: https://code.visualstudio.com/docs/devcontainers/containers
 [devcontainers-download]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+[direnv]: https://direnv.net/
 [docker-install]: https://docs.docker.com/engine/install/
 [editor-config]: https://editorconfig.org/
 [elixir]: https://elixir-europe.org/
