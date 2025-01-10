@@ -41,9 +41,9 @@ your PR is ready to be merged even though not all boxes were ticked off). -->
 2. [] I have performed a self-review of my own code
 3. [] I have updated any relevant user-, developer-, and/or administrator-
    facing documentation to describe any new or changed behavior
-5. [] I have commented my code in hard-to-understand areas and provided or
-   updated ([Google-style][py-doc-google]) docstrings for all packages,
-   modules, functions, classes and methods
+5. [] I have commented my code in hard-to-understand areas and added or
+   updated ([Google-style][py-doc-google]) docstrings for all relevant
+   packages, modules, functions, classes and methods
 7. [] I have added type annotations for all class, function and method
    interfaces or updated existing ones
 8. [] I have added tests that prove my fix is effective or that my feature
