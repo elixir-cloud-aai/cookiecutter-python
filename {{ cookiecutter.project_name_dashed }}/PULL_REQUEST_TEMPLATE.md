@@ -29,7 +29,7 @@ ready for review. Please do not forget to double check the list after you have
 modified your PR, e.g., if you have added commits to address reviewer
 comments or to fix failing automated checks. **Please check items also if they
 do not apply to your change**, e.g., if your change does not require an update
-of the user-facing documentation, still check the box.
+of the user-facing documentation, still check the box!**
 
 Generally, **PRs are only reviewed when ALL BOXES are ticked off and all
 automated checks pass** (use the comment section below if you believe that
@@ -49,8 +49,8 @@ your PR is ready to be merged even though not all boxes were ticked off). -->
 6. [] I have added tests that prove my fix is effective or that my feature
     works
 7. [] I have not reduced the existing code coverage
-8. [] **I have ticked off all items in this checklist because leaving any unchecked
-    boxes means the PR is not ready for review**
+8. [] **I am aware that my PR will not be reviewed until all boxes in this
+      checklist are ticked and all automated checks pass!**
 
 #### Comments
 
