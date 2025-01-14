@@ -39,18 +39,17 @@ your PR is ready to be merged even though not all boxes were ticked off). -->
    and I acknowledge that all my commits will be squashed into a single commit
    using the PR title as the commit message
 2. [] I have performed a self-review of my own code
-3. [] I have updated any relevant user-, developer-, and/or administrator-
-   facing documentation to describe any new or changed behavior
-5. [] I have commented my code in hard-to-understand areas and added or
-   updated ([Google-style][py-doc-google]) docstrings for all relevant
-   packages, modules, functions, classes and methods
-7. [] I have added type annotations for all class, function and method
-   interfaces or updated existing ones
-8. [] I have added tests that prove my fix is effective or that my feature
-   works
-9. [] I have not reduced the existing code coverage
-10. [] **I am aware that my PR will not be reviewed until all boxes in this
-    checklist are ticked and all automated checks pass!**
+3. [] I have updated any relevant user- developer- and or administrator-facing
+    documentation to describe any new or changed behavior
+4. [] I have added or updated docstrings in the style adopted by the project for
+    all relevant packages/modules/functions/classes/methods or updated existing ones
+5. [] I have added type annotations for all function/class/method interfaces or
+    updated existing ones
+6. [] I have added tests that prove my fix is effective or that my feature
+    works
+7. [] I have not reduced the existing code coverage
+8. [] **I have ticked off all items in this checklist because leaving any unchecked
+    boxes means the PR is not ready for review**
 
 #### Comments
 
