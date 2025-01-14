@@ -143,7 +143,7 @@ seamlessly. You can install asdf by following the
 
 The project includes a `.tool-versions` file, which lists the specific versions
 of tools used. This ensures consistency across environments. To streamline the
-installation process, use the following command to install the required tools 
+installation process, use the following command to install the required tools
 defined in the `.tool-versions` file:
 
 ```sh
@@ -152,7 +152,7 @@ make asdfi
 
 > **Note:** The `make asdfi` command might not install every tool listed in
 > the `.tool-versions` file. After running the command, verify that all
-> necessary tools are installed. If any tools are missing, install them 
+> necessary tools are installed. If any tools are missing, install them
 > manually using asdf.
 
 Example manual installation command:

@@ -1,4 +1,4 @@
-{% raw %}---
+---
 name: Setup Python and Poetry Action
 description: Configure system, Python, Poetry and deps and cache management.
 
@@ -10,7 +10,7 @@ inputs:
     default: '3.11'
     description: The version of Python to use
   poetry-version:
-    default: '1.8.2'
+    default: {{ cookiecutter.poetry_version }}
     description: The version of Poetry to install
   poetry-install-options:
     default: ''
@@ -19,7 +19,7 @@ inputs:
     default: ''
     description: Options to pass to poetry export for hash generation for cache
                  invalidation
-
+{% raw %}
 runs:
   using: composite
   steps:
