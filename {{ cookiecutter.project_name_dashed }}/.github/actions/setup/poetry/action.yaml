@@ -10,7 +10,7 @@ inputs:
     default: '3.11'
     description: The version of Python to use
   poetry-version:
-    default: {{ cookiecutter.poetry_version }}
+    default: '{{ cookiecutter.poetry_version }}'
     description: The version of Poetry to install
   poetry-install-options:
     default: ''
