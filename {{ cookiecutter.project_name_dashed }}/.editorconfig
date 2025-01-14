@@ -20,3 +20,9 @@ quote_type = double
 
 [*.md]
 max_line_length = 80
+
+[*.{json,yml,yaml}]
+indent_size = 2
+
+[Makefile]
+indent_style = tab
