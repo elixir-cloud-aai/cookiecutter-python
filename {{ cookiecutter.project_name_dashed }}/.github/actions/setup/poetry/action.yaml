@@ -1,4 +1,3 @@
-{% raw %}---
 name: Setup Python and Poetry Action
 description: Configure system, Python, Poetry and deps and cache management.
 
@@ -7,7 +6,7 @@ inputs:
     default: ubuntu-latest
     description: The operating system to use
   python-version:
-    default: '3.11'
+    default: '{{ cookiecutter.python_version }}'
     description: The version of Python to use
   poetry-version:
     default: '1.8.2'
@@ -26,8 +25,8 @@ runs:
     - uses: 'actions/setup-python@v5'
       id: setup-python
       with:
-        python-version: '${{ inputs.python-version }}'
-
+        python-version: '{{ cookiecutter.python_version }}'
+{% raw %}
     - name: Setup pipx environment Variables
       id: pipx-env-setup
       # pipx default home and bin dir are not writable by the cache action
@@ -89,4 +88,4 @@ runs:
       if: steps.poetry-cache.outputs.cache-hit != 'true'
       shell: bash
       run: poetry install ${{ inputs.poetry-install-options }} --no-interaction
-...{% endraw %}
+{% endraw %}
