@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 ###############################################################################
-# Stage 1: Base image 
+# Stage 1: Base image
 ###############################################################################
 
 ARG PYTHON_VERSION={{ cookiecutter.python_version }}
@@ -18,7 +18,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && rm -rf /var/lib/apt/lists/*
 
 ###############################################################################
-# Stage 2: Poetry Install 
+# Stage 2: Poetry Install
 ###############################################################################
 
 FROM base as poetry-installer
@@ -30,7 +30,7 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
     && ln -s /root/.local/bin/poetry /usr/local/bin/poetry
 
 ###############################################################################
-# Stage 3: Zsh Configuration 
+# Stage 3: Zsh Configuration
 ###############################################################################
 
 FROM poetry-installer as zsh-config

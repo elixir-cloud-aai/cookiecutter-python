@@ -1,7 +1,7 @@
 ---
 default: true
 
-#Headings
+# Headings
 MD001:
   level: 1  #Require headings to increment by one level at a time
 MD002:
@@ -74,5 +74,3 @@ MD048: true  #Code fence style
 MD049: true  #Required heading structure
 MD050: true  #Strong style should be consistent
 ...
-
-
