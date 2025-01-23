@@ -1,3 +1,4 @@
+---
 name: Setup Python and Poetry Action
 description: Configure system, Python, Poetry and deps and cache management.
 
@@ -89,3 +90,5 @@ runs:
       shell: bash
       run: poetry install ${{ inputs.poetry-install-options }} --no-interaction
 {% endraw %}
+...
+
