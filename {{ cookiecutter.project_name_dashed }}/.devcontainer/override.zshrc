@@ -13,5 +13,11 @@ plugins=(
 # Load oh-my-zsh with the configured settings
 source $ZSH/oh-my-zsh.sh
 
+# Load asdf
+. "$HOME/.asdf/asdf.sh"
+
+# Initialize direnv
+eval "$(direnv hook zsh)"
+
 # Attempt to activate the Python virtual environment for every session
 source /workspaces/{{ cookiecutter.project_name_dashed }}/.venv/bin/activate 2>/dev/null || true
