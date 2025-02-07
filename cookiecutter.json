@@ -19,6 +19,7 @@
     "add_script": "y",
     "year": "{% now 'utc', '%Y' %}",
     "add_pypi_release_ci": "y",
+    "add_docker_image": "y"
     "__prompts__": {
         "author_name": "Full name or organization (used in license and pyproject.toml)",
         "author_email": "Email address for project contact (used for PyPI publishing and issue reporting)",
@@ -30,6 +31,7 @@
         "github_username": "GitHub account name (used in repo URL and package metadata)",
         "python_version": "Minimum Python version <X.Y.Z format> (used in dependency specification)",
         "add_script": "CLI tool inclusion flag <y/n> (used in build configuration)",
-        "add_pypi_release_ci": "PyPI publishing automation flag <y/n>"
+        "add_pypi_release_ci": "PyPI publishing automation flag <y/n>",
+        "add_docker_image": "Dockerhub publishing automation flag <y/n>"
     }
 }
