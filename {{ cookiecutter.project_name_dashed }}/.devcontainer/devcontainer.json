@@ -69,6 +69,6 @@
       }
     }
   },
-  "postCreateCommand": "make venv && . .venv/bin/activate && make install",
+  "postCreateCommand": "[ -d .venv ] || make venv && . .venv/bin/activate && make install",
   "remoteUser": "root"
 }
