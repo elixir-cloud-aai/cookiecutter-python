@@ -16,6 +16,7 @@
     "project_name_underscored": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "github_username": "elixir-cloud-aai",
     "python_version": "3.13.0",
+    "poetry_version": "1.8.5",
     "add_script": "y",
     "year": "{% now 'utc', '%Y' %}",
     "add_pypi_release_ci": "y",
@@ -29,6 +30,7 @@
         "project_name_dashed": "Distribution name <lowercase, hyphens, no spaces> (used on PyPI)",
         "github_username": "GitHub account name (used in repo URL and package metadata)",
         "python_version": "Minimum Python version <X.Y.Z format> (used in dependency specification)",
+        "poetry_version": "Poetry version <X.Y.Z format>",
         "add_script": "CLI tool inclusion flag <y/n> (used in build configuration)",
         "add_pypi_release_ci": "PyPI publishing automation flag <y/n>"
     }
