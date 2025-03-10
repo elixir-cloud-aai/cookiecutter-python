@@ -29,33 +29,27 @@ ready for review. Please do not forget to double check the list after you have
 modified your PR, e.g., if you have added commits to address reviewer
 comments or to fix failing automated checks. **Please check items also if they
 do not apply to your change**, e.g., if your change does not require an update
-of the user-facing documentation, still check the box.
+of the user-facing documentation, still check the box!
 
 Generally, **PRs are only reviewed when ALL BOXES are ticked off and all
 automated checks pass** (use the comment section below if you believe that
 your PR is ready to be merged even though not all boxes were ticked off). -->
 
-- \[ \] My code follows the [contributing guidelines][contributing-guidelines]
-  of this project, including, in particular, with regard to any style guidelines
-- \[ \] The title of my PR complies with the
-  [Conventional Commits specification][conv-commits]; in particular, it clearly
-  indicates that a change is a breaking change
-- \[ \] I acknowledge that all my commits will be squashed into a single commit,
-  using the PR title as the commit message
-- \[ \] I have performed a self-review of my own code
-- \[ \] I have commented my code in hard-to-understand areas
-- \[ \] I have updated the user-facing documentation to describe any new or
-  changed behavior
-- \[ \] I have added type annotations for all function/class/method interfaces
-  or updated existing ones (only for Python, TypeScript, etc.)
-- \[ \] I have provided appropriate documentation
-  ([Google-style Python docstrings][py-doc-google]) for all
-  packages/modules/functions/classes/methods or updated existing ones
-- \[ \] My changes generate no new warnings
-- \[ \] I have added tests that prove my fix is effective or that my feature
-  works
-- \[ \] New and existing unit tests pass locally with my changes
-- \[ \] I have not reduced the existing code coverage
+1. [] My code follows the [contributing guidelines][contributing-guidelines]
+   and I acknowledge that all my commits will be squashed into a single commit
+   using the PR title as the commit message
+2. [] I have performed a self-review of my own code
+3. [] I have updated any relevant user- developer- and or administrator-facing
+    documentation to describe any new or changed behavior
+4. [] I have added or updated docstrings in the style adopted by the project for
+    all relevant packages/modules/functions/classes/methods or updated existing ones
+5. [] I have added type annotations for all function/class/method interfaces or
+    updated existing ones
+6. [] I have added tests that prove my fix is effective or that my feature
+    works
+7. [] I have not reduced the existing code coverage
+8. [] **I have ticked off all items in this checklist because leaving any unchecked
+    boxes means the PR is not ready for review**
 
 #### Comments
 
@@ -68,5 +62,4 @@ in that case, it is a prerequisite that all commits follow the Conventional
 Commits specification). -->
 
 [contributing-guidelines]: https://elixir-cloud-aai.github.io/guides/guide-contributor/workflow/
-[conv-commits]: https://www.conventionalcommits.org/en
 [py-doc-google]: https://google.github.io/styleguide/pyguide.html
