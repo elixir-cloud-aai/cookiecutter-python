@@ -61,5 +61,5 @@ warrants or requires multiple commits to be added to the history (but note that
 in that case, it is a prerequisite that all commits follow the Conventional
 Commits specification). -->
 
-[contributing-guidelines]: https://elixir-cloud-aai.github.io/guides/guide-contributor/workflow/
+[contributing-guidelines]: https://github.com/elixir-cloud-aai/.github/blob/main/CONTRIBUTING.md
 [py-doc-google]: https://google.github.io/styleguide/pyguide.html

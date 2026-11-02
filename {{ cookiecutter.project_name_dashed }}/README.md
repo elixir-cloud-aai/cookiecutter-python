@@ -274,8 +274,8 @@ To get in touch with us, please use one of the following routes:
 [asdf-install]: https://asdf-vm.com/guide/getting-started.html
 [badge-chat-url]: https://join.slack.com/t/elixir-cloud/shared_invite/enQtNzA3NTQ5Mzg2NjQ3LTZjZGI1OGQ5ZTRiOTRkY2ExMGUxNmQyODAxMDdjM2EyZDQ1YWM0ZGFjOTJhNzg5NjE0YmJiZTZhZDVhOWE4MWM
 [badge-license-url]: http://www.apache.org/licenses/LICENSE-2.0
-[code-of-conduct]: https://elixir-cloud-aai.github.io/about/code-of-conduct/
-[contributing]: https://elixir-cloud-aai.github.io/guides/guide-contributor/
+[code-of-conduct]: https://github.com/elixir-cloud-aai/.github/blob/main/CODE_OF_CONDUCT.md
+[contributing]: https://github.com/elixir-cloud-aai/.github/blob/main/CONTRIBUTING.md
 [devcontainers]: https://code.visualstudio.com/docs/devcontainers/containers
 [devcontainers-download]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 [direnv]: https://direnv.net/
